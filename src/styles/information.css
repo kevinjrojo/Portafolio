@@ -1,0 +1,19 @@
+.information-conteiner {
+  background-color: #e8dab2;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-evenly;
+}
+.imagen-autor {
+  margin-top: 50%;
+  max-width: 300px;
+}
+.card {
+  margin-top: 50%;
+  width: 190px;
+  height: 254px;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 20px #bebebe, -20px -20px 80px #ffffff;
+}
