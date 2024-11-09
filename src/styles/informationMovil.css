@@ -1,4 +1,4 @@
-.card {
+.information-content {
   display: none;
 }
 @media only screen and (max-width: 600px) {
@@ -8,23 +8,21 @@
   .imagen-autor {
     display: none;
   }
-  .card- {
+  .Card {
     display: none;
   }
   .card {
-    margin-top: 40%;
+    margin-top: 10%;
+    margin: 0 auto;
+    place-content: center;
     position: relative;
     width: 340px;
     height: 450px;
     background-image: url("../assets/cactus.jpg");
-
     background-size: cover;
     border-radius: 10px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     overflow: hidden;
-    perspective: 1000px;
     box-shadow: 0 0 0 5px #dd6e42;
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
