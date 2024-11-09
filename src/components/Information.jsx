@@ -9,8 +9,8 @@ export const Information = () => {
       <Element name="targetSection" className="target-section">
         <img src={img} alt="" className="imagen-autor" />
         <div className="information-content">
-          <h2 className="information-title">Sobre mi</h2>
-          <p className="information-descriptions">
+          <p className="information-text">
+            <h2>Sobre mi</h2>
             ¡Hola! Soy Kevin, un apasionado desarrollador front-end con
             experiencia en la creación de experiencias web excepcionales. Con
             más de 1 años de experiencia en el campo, me especializo en

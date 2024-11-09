@@ -9,9 +9,18 @@ export const Intro = () => {
       <h1 className="name-profession">FRONT-END DEVEPOPER</h1>
       <Link to="targetSection" smooth={true} duration={500}>
         <button className="button">
-          <svg viewBox="0 0 384 512" className="svgIcon arrow-down">
-            <path d="M214.6 41.4c-12.5-12.5-32.8-1.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"></path>
-          </svg>
+          <div className="button-box">
+            <span className="button-elem">
+              <svg viewBox="0 0 46 40" className="rotate-down">
+                <path d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z" />
+              </svg>
+            </span>
+            <span className="button-elem">
+              <svg viewBox="0 0 46 40" className="rotate-down">
+                <path d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z" />
+              </svg>
+            </span>
+          </div>
         </button>
       </Link>
     </div>

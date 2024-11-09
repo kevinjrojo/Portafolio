@@ -1,7 +1,7 @@
-.information-content {
-  display: none;
-}
 @media only screen and (max-width: 600px) {
+  .information-content {
+    display: none;
+  }
   .target-section {
     grid-template-columns: auto;
   }
@@ -23,19 +23,19 @@
     border-radius: 10px;
     display: flex;
     overflow: hidden;
-    box-shadow: 0 0 0 5px #dd6e42;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 0 0 4px #dd6e42;
+    transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
 
   .card svg {
     width: 48px;
     fill: #333;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
 
   .card:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 16px #dd6e42;
+    box-shadow: 0 9px 16px #dd6e42;
   }
 
   .card__content {
@@ -46,7 +46,7 @@
     height: 100%;
     padding: 20px;
     box-sizing: border-box;
-    background-color: #4f6d7a;
+    background-color: rgba(0, 0, 0, 0.479);
     transform: rotateX(-90deg);
     transform-origin: bottom;
   }
