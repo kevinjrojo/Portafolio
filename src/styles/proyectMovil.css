@@ -1,0 +1,12 @@
+@media only screen and (max-width: 600px) {
+  .target-proyect {
+    grid-template-columns: auto;
+  }
+  .card-proyect {
+    margin-top: 20vh;
+    object-fit: cover;
+    perspective: 1000px;
+    height: 310px;
+    width: 200px;
+  }
+}

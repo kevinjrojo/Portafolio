@@ -11,10 +11,8 @@ export const InformationMovil = () => {
           de 1 años de experiencia en el campo, me especializo en convertir
           diseños creativos en interfaces interactivas y funcionales. Estoy
           familiarizado con una variedad de tecnologías front-end, incluyendo
-          HTML5, CSS3, JavaScript y frameworks modernos como React.js. Me
-          enorgullece escribir código limpio, semántico y modular que cumpla con
-          los estándares de la industria y sea fácil de mantener y escalar.
-          Estoy emocionado por explorar nuevas oportunidades en el campo del
+          HTML5, CSS3, JavaScript y frameworks modernos como React.js. Estoy
+          emocionado por explorar nuevas oportunidades en el campo del
           desarrollo front-end y colaborar con equipos dinámicos en proyectos
           emocionantes. Si estás buscando un desarrollador comprometido con la
           excelencia y la innovación, ¡me encantaría conectar contigo!
