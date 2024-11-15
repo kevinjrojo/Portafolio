@@ -1,5 +1,12 @@
+:root {
+  --primary-color: #c0d6df;
+  --secondary-color: #dd6e42;
+  --background-color-page: #e8dab2;
+  --target-button: #4f6d7a;
+}
+
 .information-conteiner {
-  background-color: #e8dab2;
+  background-color: var(--background-color-page);
   height: 100vh;
 }
 .target-section {
@@ -19,12 +26,12 @@
 .information-content {
   width: 80%;
   height: 70%;
-  background: #4f6d7a;
+  background: var(--target-button);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1em;
-  color: #e8dab2;
+  color: var(--background-color-page);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   border-radius: 40px;
   cursor: pointer;
@@ -37,7 +44,7 @@
   position: absolute;
   height: 22%;
   width: 100%;
-  background-color: #dd6e42;
+  background-color: var(--secondary-color);
   bottom: 0;
   right: 0;
   transform: translatey(70px);

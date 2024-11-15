@@ -1,56 +1,19 @@
 import "../styles/proyect.css";
 import "../styles/proyectMovil.css";
-export const Proyect = () => {
+
+export const Proyect = ({ Title, Description, Image, Link }) => {
+  //  const proyectImage = `../assets/proyects${Image}`;
+
   return (
-    <div className="target-proyect">
+    <div className="target-project">
       <div className="card-proyect">
+        <h3 className="tilte-proyect">{Title}</h3>
         <div className="card__content-proyect">
-          <p className="card__title-proyect">Registro de datos</p>
-          <p className="card__description-proyect">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco.
-          </p>
-          <a
-            href="https://kevinjrojo.github.io/Registro_2/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <p className="card__title-proyect">{Title}</p>
+          <p className="card__description-proyect">{Description}</p>
+          <a href={Link} target="_blank" rel="noopener noreferrer">
             ir a app
-          </a>
-        </div>
-      </div>
-      <div className="card-proyect">
-        <div className="card__content-proyect">
-          <p className="card__title-proyect">Registro de datos</p>
-          <p className="card__description-proyect">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco.
-          </p>
-          <a
-            href="https://kevinjrojo.github.io/Registro_2/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            ir a app
-          </a>
-        </div>
-      </div>
-      <div className="card-proyect">
-        <div className="card__content-proyect">
-          <p className="card__title-proyect">Registro de datos</p>
-          <p className="card__description-proyect">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco.
-          </p>
-          <a
-            href="https://kevinjrojo.github.io/Registro_2/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            ir a app
+            <link rel="stylesheet" href="" />
           </a>
         </div>
       </div>

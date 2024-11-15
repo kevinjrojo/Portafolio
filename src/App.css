@@ -1,14 +1,27 @@
+:root {
+  --primary-color: #c0d6df;
+  --secondary-color: #dd6e42;
+  --background-color-page: #e8dab2;
+  --target-button: #4f6d7a;
+}
+
+hr {
+  width: 50%;
+  height: 2px;
+  background-color: #dd6e42;
+}
+
 body {
   margin: 0;
 }
 .text-name {
-  color: #c0d6df;
+  color: var(--primary-color);
   text-align: center;
   font-size: 20px;
 }
 .name-profession {
   text-align: center;
-  color: #dd6e42;
+  color: var(--secondary-color);
 }
 
 .conteiner2 {
