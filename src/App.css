@@ -5,24 +5,16 @@
   --target-button: #4f6d7a;
 }
 
-hr {
-  width: 50%;
-  height: 2px;
-  background-color: #dd6e42;
-}
-
 body {
   margin: 0;
+  background-color: var(--background-color-page);
 }
 .text-name {
-  color: var(--primary-color);
+  color: #ffff;
   text-align: center;
   font-size: 20px;
 }
 .name-profession {
   text-align: center;
   color: var(--secondary-color);
-}
-
-.conteiner2 {
 }
