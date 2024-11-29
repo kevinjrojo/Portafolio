@@ -8,6 +8,10 @@
   height: 100vh;
 }
 .conteiner-icon-studies {
+  display: flex;
+  gap: 99px;
+  justify-content: center;
+  margin-top: 4%;
 }
 .logo-studies-html,
 .logo-studies-css,
@@ -17,44 +21,14 @@
 .logo-studies-bootstrap,
 .logo-studies-sass,
 .logo-studies-github {
-  position: absolute;
-  max-width: 100px;
+  max-width: 70px;
 }
-.logo-studies-sass {
-  left: 28%;
-}
-.logo-studies-github {
-  left: 67%;
-}
-.logo-studies-node {
-  left: 28%;
-  top: 387%;
-}
-.logo-studies-bootstrap {
-  left: 66%;
-  top: 387%;
-}
-.logo-studies-js {
-  left: 7%;
-  top: 325%;
-}
-.logo-studies-react {
-  left: 7%;
-  top: 355%;
-}
-.logo-studies-html {
-  left: 80%;
-  top: 325%;
-}
-.logo-studies-css {
-  left: 80%;
-  top: 355%;
-}
+
 .conteiner-certificates {
   display: grid;
   grid-template-columns: auto auto;
   justify-content: space-evenly;
-  margin-top: 7%;
+  margin-top: 5%;
 }
 .certificates-studies {
   cursor: pointer;
