@@ -9,6 +9,7 @@ import qr from "./assets/projects/qr.jpg";
 import citasAleatorias from "./assets/projects/citas-aleatorias.jpg";
 import juegoPalabras from "./assets/projects/juego-palabras.jpg";
 import { Studies } from "./components/Studies.jsx";
+import { Contact } from "./components/Contact.jsx";
 
 function App() {
   // Lista de proyectos
@@ -54,10 +55,10 @@ function App() {
     <>
       <Intro />
       <Information />
-      {/* Pasar la lista de proyectos como prop */}
       <Project Projects={projects} />
       <ProjectMovil Projects={projects} />
       <Studies />
+      <Contact />
     </>
   );
 }

@@ -15,15 +15,15 @@ import { useState } from "react";
 
 export const Studies = () => {
   const [isZoomed, setIsZoomed] = useState(false);
-  const [selectedImage, setSelectedImage] = useState(null); // Controla si la imagen está ampliada
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const handleImageClick = (image) => {
-    setSelectedImage(image); // Establece la imagen seleccionada
+    setSelectedImage(image);
     setIsZoomed(true);
   };
   const closeZoom = () => {
     setIsZoomed(false);
-    setSelectedImage(null); // Limpia la imagen seleccionada
+    setSelectedImage(null);
   };
   const images = [
     desarrolorWebCertificates,
@@ -33,14 +33,19 @@ export const Studies = () => {
   ];
   return (
     <div className="conteiner-studies">
-      <h3>Skills</h3>
-      <p>
-        Estoy especializada en diseño y desarrollo web con HTML5, CSS3 y
-        JavaScript. Tengo experiencia desarrolando aplicaciones web con React y
-        nunca me olvido de trabajar con herramientas como Sass, Gulp, Git o
-        GitHub.
-      </p>
-
+      <article className="text-conteiner-studies">
+        <strong className="title-studies">Skills</strong>
+        <p className="description-studies">
+          Estoy especializado en diseño y desarrollo web con HTML5, CSS3,
+          JAVASCRIPT y acompañado de librerias como Bootstrap,Chakra,Bulma entre
+          otras. Tengo experiencia desarrolando aplicaciones web con React,me
+          destaco en la creación de aplicaciones SPA (Single Page Applications),
+          la integración con APIs RESTful y el uso de hooks como useState y
+          useEffect para gestionar estados y efectos en mis proyectos. Estoy en
+          constante aprendizaje de las últimas tendencias y tecnologías para
+          mejorar mis habilidades y ofrecer soluciones innovadoras.
+        </p>
+      </article>
       <div className="conteiner-certificates">
         {images.map((image, index) => (
           <img
