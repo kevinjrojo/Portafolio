@@ -16,14 +16,25 @@ export const Project = ({ Projects }) => {
             <div className="card__content-proyect">
               <p className="card__title-proyect">{Project.Name}</p>
               <p className="card__description-proyect">{Project.Description}</p>
-              <a
-                href={Project.Link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="card__link"
-              >
-                Ir a app
-              </a>
+              <nav className="card_link_project">
+                {" "}
+                <a
+                  href={Project.Link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="card__link_app"
+                >
+                  <strong>Ir a app</strong>
+                </a>
+                <a
+                  href={Project.Link2}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="card__link_code"
+                >
+                  <strong>Ir a code</strong>
+                </a>
+              </nav>
             </div>
           </div>
         </div>

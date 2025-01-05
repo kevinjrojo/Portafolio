@@ -8,9 +8,12 @@
 .title {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: var(--secondary-color);
+  color: var(--background-color-page);
+  background-color: var(--shaded-background);
   font-size: 40px;
+  padding: 5px;
   position: absolute;
+  border-radius: 10px;
   left: 7%;
   top: 205%;
 }
@@ -38,8 +41,8 @@
 }
 .card-proyect {
   background-size: contain;
-  width: 350px;
-  height: 250px;
+  width: 300px;
+  height: 200px;
   border-radius: 10px;
   align-items: center;
   overflow: hidden;
@@ -91,14 +94,42 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin: 10px 0 0;
-  font-size: 14px;
+  font-size: 12px;
   color: #ffff;
   line-height: 1.4;
 }
-.card__link {
+.card_link_project {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-evenly;
+}
+.card__link_app {
+  margin-top: 10px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: #ffff;
+  color: var(--secondary-color);
+  background-color: var(--shaded-background);
+  border-radius: 10px;
+  padding: 5px;
+  text-decoration: none;
+}
+.card__link_app:hover {
+  color: white;
+  transition: 0.3s;
+}
+.card__link_code {
+  margin-top: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: var(--secondary-color);
+  background-color: var(--shaded-background);
+  border-radius: 10px;
+  padding: 5px;
+  text-decoration: none;
+}
+.card__link_code:hover {
+  color: white;
+  transition: 0.3s;
 }
 .projects-container-movil {
   display: none;
