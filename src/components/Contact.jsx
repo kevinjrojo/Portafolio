@@ -5,10 +5,12 @@ export const Contact = () => {
       <article className="content-conctact-text">
         <strong className="title-contact">Contactos</strong>
         <p className="text-descriptions-contact">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime modi
-          quam dolores. Natus, ea facilis? Nulla sed consequuntur velit, optio
-          architecto a harum distinctio perspiciatis voluptas minus, at maxime
-          perferendis.
+          <strong className="text-descriptions-contact-title">
+            ¿Quieres saber más mí?
+          </strong>
+          <br />
+          Si estás buscando un frontend o simplemente quieres conocerme más,
+          contáctame y hablamos.
         </p>
       </article>
       <div className="card-icon-contact">
@@ -88,9 +90,13 @@ export const Contact = () => {
         </a>
       </div>
       <hr className="content-conctact-footer" />
-      <strong className="content-conctact-footer-text">
-        Diseñado y desarrollado por Kevin Rojo
-      </strong>
+      <p className="content-conctact-footer-text">
+        Diseñado y desarrollado por{" "}
+        <strong className="content-conctact-footer-text-name">
+          {" "}
+          Kevin Rojo
+        </strong>
+      </p>
     </div>
   );
 };
