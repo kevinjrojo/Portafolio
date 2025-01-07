@@ -1,4 +1,4 @@
-# Portafolio de [Tu Nombre]  
+# Portafolio de [Kevin Rojo]  
 ¡Explora mis proyectos y conoce más sobre mi trabajo como desarrollador front-end!
 
 Este portafolio es una recopilación de mis proyectos y habilidades como desarrollador front-end. Fue creado para mostrar mi experiencia en tecnologías como HTML, CSS, JavaScript y React, y para ofrecer una visión de mi estilo de desarrollo.  
