@@ -25,7 +25,7 @@ Puedes explorar mi portafolio en el siguiente enlace: [https://kevinjrojo.github
 1. Clona este repositorio:  
    ```bash
    git clone https://github.com/kevinjrojo/Portafolio
-2. Instala las dependencias
+2. Instala las dependencias:
    npm install
    npm run dev
    
