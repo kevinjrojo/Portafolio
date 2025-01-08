@@ -1,8 +1,31 @@
-# React + Vite
+# Portafolio de [Kevin Rojo]  
+¡Explora mis proyectos y conoce más sobre mi trabajo como desarrollador front-end!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este portafolio es una recopilación de mis proyectos y habilidades como desarrollador front-end. Fue creado para mostrar mi experiencia en tecnologías como HTML, CSS, JavaScript y React, y para ofrecer una visión de mi estilo de desarrollo.  
 
-Currently, two official plugins are available:
+## Tecnologías utilizadas  
+- **HTML5**  
+- **CSS3** (Sass, Flexbox, CSS Grid)  
+- **JavaScript (ES6+)**  
+- **React.js**  
+- **Vite**  
+- **Git y GitHub**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  ## Funcionalidades  
+- Diseño completamente responsivo.  
+- Animaciones suaves con CSS.  
+- Integración de un formulario de contacto funcional.  
+- Navegación intuitiva con SPA (Single Page Application).  
+
+## Cómo acceder  
+### En vivo  
+Puedes explorar mi portafolio en el siguiente enlace: [https://kevinjrojo.github.io/Portafolio/](https://kevinjrojo.github.io/Portafolio/)  
+
+### Localmente  
+1. Clona este repositorio:  
+   ```bash
+   git clone https://github.com/kevinjrojo/Portafolio
+2. Instala las dependencias:
+   npm install,
+   npm run dev.
+   
