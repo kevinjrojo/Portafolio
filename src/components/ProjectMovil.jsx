@@ -10,19 +10,26 @@ export const ProjectMovil = ({ Projects }) => {
               backgroundImage: `url(${Project.Image})`,
             }}
           >
-            <h4 className="tilte-proyect-movil">{Project.Name}</h4>
-            <div className="card__content-proyect-movil">
-              <p className="card__title-proyect-movil">{Project.Name}</p>
-              <p className="card__description-proyect-movil"></p>
+            <strong className="tilte-proyect-movil">${Project.Name}</strong>
+            <nav className="card_link_project_movil">
+              {" "}
               <a
                 href={Project.Link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="card__link-movil"
+                className="card__link_app_movil"
               >
-                Ir a app
+                <strong>Ir a app</strong>
               </a>
-            </div>
+              <a
+                href={Project.Link2}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="card__link_code_movil"
+              >
+                <strong>Ir a code</strong>
+              </a>
+            </nav>
           </div>
         </div>
       ))}

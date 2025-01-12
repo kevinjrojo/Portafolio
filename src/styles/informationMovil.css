@@ -16,8 +16,8 @@
     margin: 0 auto;
     place-content: center;
     position: relative;
-    width: 340px;
-    height: 450px;
+    width: 380px;
+    height: 510px;
     background-image: url("../assets/cactus.jpg");
     background-size: cover;
     border-radius: 10px;
@@ -33,11 +33,6 @@
     transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
 
-  .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 9px 16px #dd6e42;
-  }
-
   .card__content {
     position: absolute;
     top: 0;
@@ -46,29 +41,18 @@
     height: 100%;
     padding: 20px;
     box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.479);
-    transform: rotateX(-90deg);
+    background-color: rgba(0, 0, 0, 0.795);
     transform-origin: bottom;
   }
 
-  .card:hover .card__content {
-    transform: rotateX(0deg);
-  }
-
   .card__title {
-    margin: 0;
     font-size: 24px;
     color: #c0d6df;
     font-weight: 700;
   }
-
-  .card:hover svg {
-    scale: 0;
-  }
-
   .card__description {
-    margin: 10px 0 0;
-    font-size: 14px;
+    margin: 40px 0 0;
+    font-size: 16px;
     color: #c0d6df;
     line-height: 1.4;
   }

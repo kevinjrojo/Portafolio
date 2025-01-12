@@ -14,6 +14,16 @@
   place-items: center;
   align-content: center;
 }
+.text-name {
+  margin: 0 auto;
+  text-align: center;
+  color: #ffff;
+  font-size: 20px;
+}
+.name-profession {
+  text-align: center;
+  color: var(--secondary-color);
+}
 .button {
   display: block;
   position: relative;
@@ -98,4 +108,11 @@
 }
 .rotate-down {
   transform: rotate(270deg);
+}
+@media only screen and (max-width: 600px) {
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
