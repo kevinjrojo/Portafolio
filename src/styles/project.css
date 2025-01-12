@@ -173,7 +173,8 @@
       sans-serif;
     background-color: #dd6e42;
     color: #ffff;
-    margin-top: 50px;
+    margin-top: 45px;
+    padding: 5px;
   }
   .card-proyect-movil {
     background-size: cover;
@@ -196,7 +197,7 @@
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif;
     color: white;
-    border-bottom: 2px var(--background-color-page) solid;
+
     background-color: #dd6e42;
     text-decoration: none;
     padding: 3px;
@@ -212,7 +213,7 @@
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif;
     color: white;
-    border-bottom: 2px var(--background-color-page) solid;
+
     text-decoration: none;
   }
 }

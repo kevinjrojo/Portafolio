@@ -10,7 +10,7 @@ export const ProjectMovil = ({ Projects }) => {
               backgroundImage: `url(${Project.Image})`,
             }}
           >
-            <strong className="tilte-proyect-movil">${Project.Name}</strong>
+            <strong className="tilte-proyect-movil">{Project.Name}</strong>
             <nav className="card_link_project_movil">
               {" "}
               <a

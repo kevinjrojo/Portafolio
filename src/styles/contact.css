@@ -28,10 +28,9 @@
   color: rgb(255, 255, 255);
   font-size: 1.3em;
   text-align: center;
-  margin-left: 15%;
   margin-top: 2%;
   padding-bottom: 10%;
-  width: 70%;
+  width: 100%;
 }
 .text-descriptions-contact-title {
   color: var(--secondary-color);
@@ -58,7 +57,6 @@
 }
 .social-link1 {
   height: 15vh;
-
   width: 15vh;
 }
 .social-link3 {
@@ -81,7 +79,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   color: white;
   font-size: 24px;
   text-decoration: none;
@@ -164,7 +161,6 @@
 }
 .content-conctact-footer-text {
   color: white;
-
   display: flex;
   gap: 5px;
   margin-top: 2vh;
@@ -172,4 +168,102 @@
 }
 .content-conctact-footer-text-name {
   color: var(--secondary-color);
+}
+@media only screen and (max-width: 600px) {
+  .title-contact {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 40px;
+    left: 4%;
+    top: 400%;
+  }
+  .content-conctact-text {
+    width: 100%;
+    margin-left: 0%;
+  }
+  .text-descriptions-contact {
+    width: 95%;
+    padding: 8px;
+    margin-top: 2%;
+    padding-bottom: 10%;
+  }
+  .card-icon-contact {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5vh;
+    height: 30vh;
+  }
+  .name-contact-social {
+    margin-top: 21vh;
+  }
+  .social-link1 {
+    background: #f09433;
+    background: -moz-linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
+    background: -webkit-linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
+    background: linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
+
+    height: 15vh;
+    width: 15vh;
+  }
+  .social-link3 {
+    background-color: #5865f2;
+    height: 15vh;
+    width: 15vh;
+  }
+  .social-link2 {
+    background-color: #00ccff;
+    height: 15vh;
+    width: 15vh;
+  }
+  .social-link4 {
+    background-color: #12a50b;
+    height: 15vh;
+    width: 15vh;
+  }
+  .card-icon-contact .social-link1,
+  .card-icon-contact .social-link2,
+  .card-icon-contact .social-link3,
+  .card-icon-contact .social-link4 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.25s;
+    border-radius: 100px;
+  }
+  .content-conctact-footer {
+    border: none;
+    margin-top: 25vh;
+  }
+  .content-conctact-footer-text {
+    color: white;
+    display: flex;
+    gap: 5px;
+    margin-top: 2vh;
+    justify-content: center;
+  }
 }
