@@ -16,8 +16,8 @@
     margin: 0 auto;
     place-content: center;
     position: relative;
-    width: 380px;
-    height: 510px;
+    width: 90%;
+    height: 60%;
     background-image: url("../assets/cactus.jpg");
     background-size: cover;
     border-radius: 10px;
