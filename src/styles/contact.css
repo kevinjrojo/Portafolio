@@ -168,14 +168,16 @@
   color: var(--secondary-color);
 }
 @media only screen and (max-width: 600px) {
+  .content-conctact {
+    height: 80vh;
+  }
   .content-conctact-text {
     width: 97%;
     margin-left: 0%;
   }
   .title-contact {
     display: grid;
-    margin-top: 2%;
-
+    margin-top: 0px;
     border-bottom: none;
     width: 100%;
     padding: 2px;
@@ -254,13 +256,13 @@
   }
   .content-conctact-footer {
     border: none;
-    margin-top: 25vh;
+    margin-top: 15vh;
   }
   .content-conctact-footer-text {
     color: white;
     display: flex;
     gap: 5px;
-    margin-top: 2vh;
+    padding-bottom: 10px;
     justify-content: center;
   }
 }

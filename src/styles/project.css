@@ -140,7 +140,7 @@
     display: none;
   }
   .projects-container-movil {
-    height: 100vh;
+    height: 80vh;
     display: grid;
   }
   .conteiner-title-project {
