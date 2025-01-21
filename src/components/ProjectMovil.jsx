@@ -4,7 +4,7 @@ export const ProjectMovil = ({ Projects }) => {
   return (
     <div className="projects-container-movil">
       <nav className="conteiner-title-project">
-        <strong className="title-movil">Proyectos</strong>
+        <strong className="title-movil-project">Proyectos</strong>
       </nav>
       <main className="conteiner-project-card-movil">
         {Projects.map((Project, index) => (

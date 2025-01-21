@@ -17,7 +17,7 @@
     place-content: center;
     position: relative;
     width: 90%;
-    height: 60%;
+    height: 65%;
     background-image: url("../assets/cactus.jpg");
     background-size: cover;
     border-radius: 10px;
@@ -51,9 +51,8 @@
     font-weight: 700;
   }
   .card__description {
-    margin: 40px 0 0;
     font-size: 16px;
     color: #c0d6df;
-    line-height: 1.4;
+    line-height: 1.3;
   }
 }

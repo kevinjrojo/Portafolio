@@ -172,6 +172,14 @@
     width: 97%;
     margin-left: 0%;
   }
+  .title-contact {
+    display: grid;
+    margin-top: 2%;
+
+    border-bottom: none;
+    width: 100%;
+    padding: 2px;
+  }
   .text-descriptions-contact {
     padding: 8px;
     margin-top: 8%;
