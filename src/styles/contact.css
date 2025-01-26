@@ -1,8 +1,9 @@
 :root {
   --primary-color: #c0d6df;
   --secondary-color: #dd6e42;
-  --background-color-page: #e8dab2;
+  --background-color-page: #ddca94;
   --target-button: #4f6d7a;
+  --title-color: #020202;
 }
 
 .content-conctact {
@@ -23,7 +24,7 @@
 }
 
 .text-descriptions-contact {
-  color: rgb(255, 255, 255);
+  color: white;
   font-size: 1.3em;
   text-align: center;
   margin-top: 3%;
