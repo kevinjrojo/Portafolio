@@ -165,6 +165,7 @@
     width: 170px;
     height: 150px;
     border-radius: 10px;
+    box-shadow: var(--secondary-color) 0px 0px 10px;
     align-items: center;
     overflow: hidden;
   }
