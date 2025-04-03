@@ -1,5 +1,5 @@
 import "../styles/information.css";
-import img from "../assets/cactus.jpg";
+import img from "../assets/kevin3.webp";
 import { Element } from "react-scroll";
 import { InformationMovil } from "./InformationMovil.jsx";
 

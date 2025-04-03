@@ -3,11 +3,12 @@ import { Information } from "./components/Information";
 import { Intro } from "./components/Intro";
 import { ProjectMovil } from "./components/ProjectMovil.jsx";
 import { Project } from "./components/Project.jsx";
-import registroDatos from "./assets/projects/registro-datos.jpg";
-import reproductorMusica from "./assets/projects/reproductor-musica.jpg";
-import qr from "./assets/projects/qr.jpg";
-import citasAleatorias from "./assets/projects/citas-aleatorias.jpg";
-import juegoPalabras from "./assets/projects/juego-palabras.jpg";
+import registroDatos from "./assets/projects/registro-datos.webp";
+import reproductorMusica from "./assets/projects/reproductor-musica.webp";
+import qr from "./assets/projects/qr.webp";
+import citasAleatorias from "./assets/projects/citas-aleatorias.webp";
+import juegoPalabras from "./assets/projects/juego-palabras.webp";
+import loop from "./assets/projects/loop.webp";
 import { Studies } from "./components/Studies.jsx";
 import { Contact } from "./components/Contact.jsx";
 
@@ -53,6 +54,14 @@ function App() {
       Image: juegoPalabras,
       Link: "https://kevinjrojo.github.io/Juego_Palabras/",
       Link2: "https://github.com/kevinjrojo/Juego_Palabras",
+    },
+    {
+      Name: "Loop",
+      Description:
+        "Loop es proyecto que esta en proceso al dia de hoy,esta es una red social el cual los usuarios pueden registrarse y compartir fotos entre amigos.",
+      Image: loop,
+      Link: " https://kevinjrojo.github.io/Loop/",
+      Link2: "https://github.com/kevinjrojo/Loop/",
     },
   ];
 

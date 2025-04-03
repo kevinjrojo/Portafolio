@@ -1,16 +1,16 @@
 import "../styles/studies.css";
-import html from "../assets/icon/html-5 (1).png";
-import css from "../assets/icon/css-3 (1).png";
-import javascrip from "../assets/icon/js (1).png";
-import react from "../assets/icon/react-js (1).png";
-import node from "../assets/icon/node js (1).png";
-import bootstrap from "../assets/icon/bootstrap (1).png";
-import sass from "../assets/icon/sass.png";
-import github from "../assets/icon/github (1).png";
-import desarrolorWebCertificates from "../assets/certificates/Desarrollo web.png";
-import javascripCertificates from "../assets/certificates/javaScript.png";
-import reactCertificates from "../assets/certificates/React js.png";
-import frontEndCertificates from "../assets/certificates/Front-End.jpg";
+import html from "../assets/icon/html-5 (1).webp";
+import css from "../assets/icon/css-3 (1).webp";
+import javascrip from "../assets/icon/js (1).webp";
+import react from "../assets/icon/react-js (1).webp";
+import node from "../assets/icon/node js (1).webp";
+import bootstrap from "../assets/icon/bootstrap (1).webp";
+import sass from "../assets/icon/sass.webp";
+import github from "../assets/icon/github (1).webp";
+import desarrolorWebCertificates from "../assets/certificates/Desarrollo web.webp";
+import javascripCertificates from "../assets/certificates/javaScript.webp";
+import reactCertificates from "../assets/certificates/React js.webp";
+import frontEndCertificates from "../assets/certificates/Front-End.webp";
 import { useState } from "react";
 
 export const Studies = () => {
