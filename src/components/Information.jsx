@@ -7,7 +7,12 @@ export const Information = () => {
   return (
     <div className="information-conteiner">
       <Element name="targetSection" className="target-section">
-        <img src={img} alt="" className="imagen-autor" />
+        <img
+          src={img}
+          alt="imagen cactus"
+          className="imagen-autor"
+          loading="lazy"
+        />
         <div className="information-content">
           <p className="information-text">
             <h2>Sobre mi</h2>

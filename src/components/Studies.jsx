@@ -1,15 +1,15 @@
 import "../styles/studies.css";
-import html from "../assets/icon/html-5.jpg";
-import css from "../assets/icon/css-3.jpg";
-import javascrip from "../assets/icon/js.jpg";
-import react from "../assets/icon/react-js.jpg";
-import node from "../assets/icon/node js.jpg";
-import bootstrap from "../assets/icon/bootstrap.jpg";
-import sass from "../assets/icon/sass.jpg";
-import github from "../assets/icon/github.jpg";
-import desarrolorWebCertificates from "../assets/certificates/Desarrollo web.jpg";
-import javascripCertificates from "../assets/certificates/javaScript.jpg";
-import reactCertificates from "../assets/certificates/React js.jpg";
+import html from "../assets/icon/html-5 (1).png";
+import css from "../assets/icon/css-3 (1).png";
+import javascrip from "../assets/icon/js (1).png";
+import react from "../assets/icon/react-js (1).png";
+import node from "../assets/icon/node js (1).png";
+import bootstrap from "../assets/icon/bootstrap (1).png";
+import sass from "../assets/icon/sass.png";
+import github from "../assets/icon/github (1).png";
+import desarrolorWebCertificates from "../assets/certificates/Desarrollo web.png";
+import javascripCertificates from "../assets/certificates/javaScript.png";
+import reactCertificates from "../assets/certificates/React js.png";
 import frontEndCertificates from "../assets/certificates/Front-End.jpg";
 import { useState } from "react";
 
@@ -54,31 +54,68 @@ export const Studies = () => {
             alt={`Imagen ${index + 1}`}
             onClick={() => handleImageClick(image)}
             className="certificates-studies"
+            loading="lazy"
           />
         ))}
       </div>
       {isZoomed && (
         <div className="overlay" onClick={closeZoom}>
-          <img src={selectedImage} alt="Ampliada" className="zoomed-image" />
+          <img
+            src={selectedImage}
+            alt="Ampliada"
+            className="zoomed-image"
+            loading="lazy"
+          />
         </div>
       )}
       <div className="conteiner-icon-studies">
-        <img src={html} alt="logo-html" className="logo-studies-html" />
-        <img src={css} alt="logo-css" className="logo-studies-css" />
+        <img
+          src={html}
+          alt="logo-html"
+          className="logo-studies-html"
+          loading="lazy"
+        />
+        <img
+          src={css}
+          alt="logo-css"
+          className="logo-studies-css"
+          loading="lazy"
+        />
         <img
           src={javascrip}
           alt="logo-javascript"
           className="logo-studies-js"
         />
-        <img src={react} alt="logo-react" className="logo-studies-react" />
-        <img src={node} alt="logo-nodejs" className="logo-studies-node" />
+        <img
+          src={react}
+          alt="logo-react"
+          className="logo-studies-react"
+          loading="lazy"
+        />
+        <img
+          src={node}
+          alt="logo-nodejs"
+          className="logo-studies-node"
+          loading="lazy"
+        />
         <img
           src={bootstrap}
           alt="logo-bootstrap"
           className="logo-studies-bootstrap"
+          loading="lazy"
         />
-        <img src={sass} alt="logo-sass" className="logo-studies-sass" />
-        <img src={github} alt="logo-github" className="logo-studies-github" />
+        <img
+          src={sass}
+          alt="logo-sass"
+          className="logo-studies-sass"
+          loading="lazy"
+        />
+        <img
+          src={github}
+          alt="logo-github"
+          className="logo-studies-github"
+          loading="lazy"
+        />
       </div>
     </div>
   );

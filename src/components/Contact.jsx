@@ -13,7 +13,7 @@ export const Contact = () => {
           contáctame y hablamos.
         </p>
       </article>
-      <div className="card-icon-contact">
+      <form className="card-icon-contact">
         <a
           className="social-link1"
           href="https://www.instagram.com/programacion_kr/"
@@ -88,7 +88,7 @@ export const Contact = () => {
           </svg>
           <p className="name-contact-social">WhatsApp</p>
         </a>
-      </div>
+      </form>
       <hr className="content-conctact-footer" />
       <p className="content-conctact-footer-text">
         Diseñado y desarrollado por{" "}
