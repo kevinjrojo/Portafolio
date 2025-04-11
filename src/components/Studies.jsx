@@ -36,14 +36,7 @@ export const Studies = () => {
       <article className="text-conteiner-studies">
         <strong className="title-studies">Skills</strong>
         <p className="description-studies">
-          Estoy especializado en diseño y desarrollo web con HTML5, CSS3,
-          JAVASCRIPT y acompañado de librerias como Bootstrap,Chakra,Bulma entre
-          otras. Tengo experiencia desarrolando aplicaciones web con React,me
-          destaco en la creación de aplicaciones SPA (Single Page Applications),
-          la integración con APIs RESTful y el uso de hooks como useState y
-          useEffect para gestionar estados y efectos en mis proyectos. Estoy en
-          constante aprendizaje de las últimas tendencias y tecnologías para
-          mejorar mis habilidades y ofrecer soluciones innovadoras.
+     Front-end developer con experiencia en React, SPA y consumo de APIs. Uso HTML, CSS, JavaScript y librerías como Bootstrap y Chakra.
         </p>
       </article>
       <div className="conteiner-certificates">
