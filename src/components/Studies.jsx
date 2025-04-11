@@ -36,7 +36,8 @@ export const Studies = () => {
       <article className="text-conteiner-studies">
         <strong className="title-studies">Skills</strong>
         <p className="description-studies">
-     Front-end developer con experiencia en React, SPA y consumo de APIs. Uso HTML, CSS, JavaScript y librerías como Bootstrap y Chakra.
+          Front-end developer con experiencia en React, SPA y consumo de APIs.
+          Uso HTML, CSS, JavaScript y librerías como Bootstrap y Chakra.
         </p>
       </article>
       <div className="conteiner-certificates">

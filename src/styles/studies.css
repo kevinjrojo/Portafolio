@@ -11,25 +11,27 @@
 .title-studies {
   display: grid;
   width: 5%;
-  margin-top: 2%;
+  margin: 5px;
   padding: 2px;
   font-size: 40px;
   color: white;
   border-bottom: 2px var(--secondary-color) solid;
 }
 .text-conteiner-studies {
-  width: 85%;
+  width: 100%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .description-studies {
   color: white;
   font-size: 1.1em;
+  justify-content: center;
+  display: flex;
   text-align: center;
-  margin: auto;
-  margin-top: 3%;
-  padding-bottom: 2%;
-  width: 80%;
+  width: 100%;
 }
 .conteiner-icon-studies {
   display: flex;
@@ -99,19 +101,11 @@
   .conteiner-studies {
     height: 85vh;
   }
-  .title-studies {
-    border-bottom: none;
-  }
-  .text-conteiner-studies {
-    width: 100%;
-    margin-left: 0;
-    margin-top: 20%;
-  }
+
   .description-studies {
     color: white;
-    font-size: 1.1em;
     text-align: center;
-    width: 95%;
+    align-items: center;
   }
   .conteiner-icon-studies {
     display: flex;
