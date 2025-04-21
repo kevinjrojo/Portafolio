@@ -13,28 +13,27 @@ import { Studies } from "./components/Studies.jsx";
 import { Contact } from "./components/Contact.jsx";
 
 function App() {
-  // Lista de proyectos
   const projects = [
     {
       Name: "Registro de Datos",
       Description:
-        "Formulario web creado con hmtl,css,javascript vanilla. En el formulario los usuarios pueden ingresar sus datos en los campos específicos. Al terminar los datos son enviados a un correo con ayuda de formSubmit.",
+        "Aplicación web desarrollada con HTML, CSS y JavaScript que permite ingresar datos y enviarlos por correo electrónico utilizando el servicio de FormSubmit.",
       Image: registroDatos,
       Link: "https://kevinjrojo.github.io/Registro_2/",
       Link2: "https://github.com/kevinjrojo/Registro_2?tab=readme-ov-file",
     },
     {
-      Name: "Reproductor música",
+      Name: "Reproductor de Música",
       Description:
-        "Reproductor de musica creado con hmtl,css y javascript vanilla. Este reproductor tiene funcionalidedes de pausar,renudar,siguiente, anterior y tambien manipular el tiempo de reproduccion.",
+        "Reproductor de música interactivo creado con HTML, CSS y JavaScript, que incluye controles básicos como reproducir, pausar y cambiar de pista.",
       Image: reproductorMusica,
       Link: "https://kevinjrojo.github.io/Music_Kr/",
       Link2: "https://github.com/kevinjrojo/Music_Kr?tab=readme-ov-file",
     },
     {
-      Name: "Creador de QR",
+      Name: "Generador de QR",
       Description:
-        "Creador de codigo QR,el Proyecto fue creado con hmtl,css,javascript vanilla y una API. Solo con una url puede crear un QR personal el cual van a poder descargar o copiar el enlace del mismo.",
+        "Herramienta práctica para generar códigos QR personalizados, desarrollada con HTML, CSS, JavaScript y una API externa para la funcionalidad.",
       Image: qr,
       Link: "https://kevinjrojo.github.io/Generador-QR/",
       Link2: "https://github.com/kevinjrojo/Generador-QR?tab=readme-ov-file",
@@ -42,15 +41,15 @@ function App() {
     {
       Name: "Citas Aleatorias",
       Description:
-        "Un creador de citas aleatorias de famosos creado con hmtl,css,javascript vanilla y una API. En el proyecto van a encontrar dos botones,uno para copiar la cita y otro para cambiar por otra cita aleatoria.",
+        "Aplicación que genera citas inspiradoras de personajes famosos, utilizando HTML, CSS, JavaScript y una API para obtener las frases.",
       Image: citasAleatorias,
       Link: "https://kevinjrojo.github.io/Frases_aletorias/",
       Link2: "https://github.com/kevinjrojo/Frases_aletorias",
     },
     {
-      Name: "Encuentra la palabra",
+      Name: "Encuentra la Palabra",
       Description:
-        "Juego interactivo para encontrar la palabra oculta. Este proyecto puso a prueba mi logica de programacion,tiene multiples interacciones el cual se van dando a medida que lo juegas.",
+        "Juego interactivo diseñado para encontrar palabras ocultas, ideal para mejorar habilidades lógicas y pasar un rato entretenido.",
       Image: juegoPalabras,
       Link: "https://kevinjrojo.github.io/Juego_Palabras/",
       Link2: "https://github.com/kevinjrojo/Juego_Palabras",
@@ -58,9 +57,9 @@ function App() {
     {
       Name: "Loop",
       Description:
-        "Loop es proyecto que esta en proceso al dia de hoy,esta es una red social el cual los usuarios pueden registrarse y compartir fotos entre amigos.",
+        "Red social en desarrollo que permite a los usuarios compartir fotos, interactuar y conectar con amigos de manera sencilla.",
       Image: loop,
-      Link: " https://kevinjrojo.github.io/Loop/",
+      Link: "https://kevinjrojo.github.io/Loop/",
       Link2: "https://github.com/kevinjrojo/Loop/",
     },
   ];

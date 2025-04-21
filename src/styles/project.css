@@ -13,7 +13,7 @@
   font-size: 40px;
   padding: 2px;
   position: absolute;
-  left: 7%;
+  left: 8%;
   top: 205%;
 }
 .projects-container {
@@ -95,7 +95,7 @@
   margin: 10px 0 0;
   font-size: 12px;
   color: #ffff;
-  line-height: 1.4;
+  height: 10vh;
 }
 .card_link_project {
   display: grid;
