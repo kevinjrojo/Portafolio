@@ -1,7 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Limelight&family=Sora:wght@100..800&display=swap");
+
 :root {
   --background-color-page: #3a3a3a;
+  --color-primary: #1f22c0;
+  --color-text: #dcdcdc;
 }
 
+* {
+  font-family: "Poppins", sans-serif;
+}
 body {
   margin: 0;
   background-color: var(--background-color-page);
