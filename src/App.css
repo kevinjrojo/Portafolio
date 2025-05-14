@@ -2,7 +2,7 @@
 
 :root {
   --background-color-page: #3a3a3a;
-  --color-primary: #1f22c0;
+  --color-primary: #2eafd3;
   --color-text: #dcdcdc;
 }
 
@@ -12,4 +12,7 @@
 body {
   margin: 0;
   background-color: var(--background-color-page);
+   height: 200vh;
 }
+
+

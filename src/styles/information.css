@@ -2,9 +2,10 @@
   --primary-color: #c0d6df;
   --secondary-color: #dd6e42;
   --target-button: #4f6d7a;
-}
+} 
 
-.information-conteiner {
+
+.information {
   height: 100vh;
 }
 .target-section {

@@ -5,7 +5,7 @@ import { InformationMovil } from "./InformationMovil.jsx";
 
 export const Information = () => {
   return (
-    <div className="information-conteiner">
+    <div className="information">
       <Element name="targetSection" className="target-section">
         <img
           src={img}
