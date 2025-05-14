@@ -12,25 +12,49 @@
   object-fit: cover;
   z-index: 1;
 }
+.photo-movil{
+  display: none;
+}
 .text-intro {
     position:relative;
     color:White;
-    text-align: center;
-    place-content: end;
+   display: flex;
+   justify-content: center;
+    align-items: end;
+    gap: 5px;
     height: 90vh;
- z-index: 2;
+    z-index: 2;
 
 }
-
 .text-intro h1 {
 color: var(--color-primary);
+margin: 10px;
+
 }
 
 @media only screen and (max-width: 600px) {
-  .hero-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-image: url("../assets/foto kevin 2.webp");
+  .photo{
+  display: none;
   }
+  .photo-movil{
+    position: absolute;
+    object-fit: cover;
+    z-index: 1;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+  }
+  .text-intro{
+    flex-direction: column;
+    display: flex;
+   justify-content: end;
+    align-items: center;
+       gap: 0px;
+   
+  }
+  .text-intro h1{
+    margin: 0px;
+  }
+
+
 }
