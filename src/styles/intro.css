@@ -3,36 +3,68 @@
   flex-direction: column;
   justify-content:center;
  overflow: hidden;
-
+  height: 100vh;
 }
 .photo {
   position: absolute;
   height: 100vh;
-  width:100%;
+  width: 100%;
   object-fit: cover;
+  top: 0;
   z-index: 1;
+
 }
 .photo-movil{
   display: none;
 }
 .text-intro {
-    position:relative;
+    position:fixed;
     color:White;
-   display: flex;
-   justify-content: center;
-    align-items: end;
+    background-color: rgba(32, 32, 32, 0.648);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 5px;
-    height: 90vh;
-    z-index: 2;
-
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 3;
+    animation: enhance-intro linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 90vh ;
+}
+@keyframes enhance-intro{
+  to{
+    background: rgba(10, 10, 10, 0.503);
+    backdrop-filter: blur(5px);
+    height: 10vh;
+  
+  }
+}
+@keyframes text-intro{
+  to{
+    display: none;
+  
+  }
 }
 .text-intro h1 {
 color: var(--color-primary);
 margin: 10px;
 
 }
+.text-intro p{
+  color: var(--color-text);
+  animation: text-intro linear both;
+  animation-timeline: scroll(root block);
+  animation-range: 0 80vh ;
+  
+}
 
 @media only screen and (max-width: 600px) {
+  .intro{
+    height: 0vh;
+  }
   .photo{
   display: none;
   }
@@ -46,12 +78,10 @@ margin: 10px;
   }
   .text-intro{
     flex-direction: column;
-    display: flex;
-   justify-content: end;
-    align-items: center;
-       gap: 0px;
-   
+    gap: 0;
   }
+
+ 
   .text-intro h1{
     margin: 0px;
   }

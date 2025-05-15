@@ -2,17 +2,18 @@
 
 :root {
   --background-color-page: #3a3a3a;
-  --color-primary: #2eafd3;
+  --color-primary: #3877ff;
   --color-text: #dcdcdc;
 }
-
 * {
   font-family: "Poppins", sans-serif;
 }
 body {
   margin: 0;
   background-color: var(--background-color-page);
-   height: 200vh;
+  height: 200vh;
 }
-
+.secciotion{
+  height: auto;
+}
 

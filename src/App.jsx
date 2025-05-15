@@ -1,18 +1,24 @@
 import "./App.css";
 import { Information } from "./components/Information";
 import { Intro } from "./components/Intro";
+import { Studies } from "./components/Studies";
+import { Contact } from "./components/Contact";
+
+
 
 
 function App() {
   return (
     <>
+    <section className="secction">
       <Intro />
-  <Information />
-      {/* 
-      <Project Projects={projects} />
-      <ProjectMovil Projects={projects} />
+    <Information />
+       
+      {/* <Projects/> */}
+      {/*<ProjectMovil Projects={projects} />*/}
       <Studies />
-      <Contact /> */}
+      <Contact /> 
+      </section>
     </>
   );
 }
