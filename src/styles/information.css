@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #c0d6df;
-  --secondary-color: #dd6e42;
-  --target-button: #4f6d7a;
-} 
+  --background-color-page: #3a3a3a;
+  --color-primary: #3877ff;
+  --color-text: #dcdcdc;
+}
 
 
 .information {
@@ -14,7 +14,10 @@
   height: 100vh;
   align-items: center;
   margin: 0 auto;
-  font-size: 0.95em;
+  font-size: 0.75em;
+   animation: reveal linear both;
+  animation-timeline: view();
+ animation-range: entry 20% cover 40%;
 }
 .imagen-autor {
   margin: auto;
@@ -29,27 +32,25 @@
   background: var(--target-button);
   display: flex;
   align-items: center;
-  color: var(--background-color-page);
+ color: var(--color-text);
   border-radius: 40px;
   position: relative;
-  transition: all 0.7s ease-in-out;
-  overflow: hidden;
+
+
+ 
 }
-.information-content::before {
-  content: "";
-  position: absolute;
-  height: 22%;
-  width: 100%;
-  background-color: var(--secondary-color);
-  bottom: 0;
-  right: 0;
-  transform: translatey(70px);
-  border-radius: 100%;
-  transition: all 0.9s ease-in-out;
+
+@keyframes reveal{
+  from{
+    opacity: 0;
+  
+  }
+  to{
+    opacity: 1;
+    
+  }
 }
-.information-content:hover::before {
-  transform: scale(9) translate(-20px);
-}
+
 
 .information-text {
   padding: 5%;
@@ -58,10 +59,7 @@
   transition: all 0.9s ease-in-out;
 }
 
-.information-text:hover {
-  color: #ffff;
-  transition: all 0.9s ease-in-out;
-}
+
 .card {
   display: none;
 }

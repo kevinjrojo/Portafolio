@@ -34,32 +34,30 @@
     animation-timeline: scroll(root block);
     animation-range: 0 90vh ;
 }
-@keyframes enhance-intro{
-  to{
-    background: rgba(10, 10, 10, 0.503);
-    backdrop-filter: blur(5px);
-    height: 10vh;
-  
-  }
-}
-@keyframes text-intro{
-  to{
-    display: none;
-  
-  }
-}
 .text-intro h1 {
 color: var(--color-primary);
 margin: 10px;
-
 }
 .text-intro p{
   color: var(--color-text);
   animation: text-intro linear both;
   animation-timeline: scroll(root block);
   animation-range: 0 80vh ;
-  
 }
+@keyframes text-intro{
+  to{
+    color: transparent;
+    display: none;
+  }
+}
+@keyframes enhance-intro{
+  to{
+    background: rgba(10, 10, 10, 0.503);
+    backdrop-filter: blur(5px);
+    height: 10vh;
+  }
+}
+
 
 @media only screen and (max-width: 600px) {
   .intro{

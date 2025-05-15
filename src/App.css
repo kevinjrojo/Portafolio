@@ -11,9 +11,7 @@
 body {
   margin: 0;
   background-color: var(--background-color-page);
-  height: 200vh;
+
 }
-.secciotion{
-  height: auto;
-}
+
 
