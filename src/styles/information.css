@@ -17,7 +17,7 @@
   font-size: 0.75em;
    animation: reveal linear both;
   animation-timeline: view();
- animation-range: entry 20% cover 40%;
+ animation-range: entry 35% cover 40%;
 }
 .imagen-autor {
   margin: auto;
@@ -43,7 +43,7 @@
 @keyframes reveal{
   from{
     opacity: 0;
-  
+   
   }
   to{
     opacity: 1;

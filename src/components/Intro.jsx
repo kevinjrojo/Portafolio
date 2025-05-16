@@ -12,11 +12,15 @@ export const Intro = () => {
          <img src={photoMovil} alt="Kevin Rojo" className="photo-movil" />
       </header>
       <article className="text-intro">
+        <div>
         <p >¡Hola! mi nombre es</p>
-        <h1>KEVIN JAVIER ROJO</h1>
-        <p >y soy</p>
+         <h1>KEVIN JAVIER ROJO</h1>
+         
+         </div>
+         <div>
+       <p >y soy</p>
         <h1>FRONT-END DEVELOPER</h1>
-
+        </div>
      </article>
     </div>
   );

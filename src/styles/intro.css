@@ -3,11 +3,11 @@
   flex-direction: column;
   justify-content:center;
  overflow: hidden;
-  height: 100vh;
+  height: 100dvh;
 }
 .photo {
   position: absolute;
-  height: 100vh;
+  height: 100dvh;
   width: 100%;
   object-fit: cover;
   top: 0;
@@ -19,36 +19,72 @@
 }
 .text-intro {
     position:fixed;
-    color:White;
     background-color: rgba(32, 32, 32, 0.648);
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100dvh;
     width: 100%;
     z-index: 3;
     animation: enhance-intro linear both;
     animation-timeline: scroll(root block);
     animation-range: 0 90vh ;
 }
+.text-intro div{
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+  position: relative;
+    animation: title-header linear both;
+  animation-timeline: scroll(root block);
+  animation-range: 0 90vh ;
+}
+.text-intro div::before {
+  content: "";
+  position: absolute;
+  height: 90%;
+  width: 1px; 
+  background-color: var(--color-text); 
+  left: 50%;
+  transform: translateX(-2vh);
+  z-index: 1;
+  animation: text-intro linear both;
+  animation-timeline: scroll(root block);
+  animation-range: 0 50vh ;
+}
 .text-intro h1 {
-color: var(--color-primary);
-margin: 10px;
+  color: var(--color-primary);
+  padding: 5px;
+  width: 35vh;
+  margin: 0 auto;
+
 }
 .text-intro p{
   color: var(--color-text);
-  animation: text-intro linear both;
+  animation: presentation linear both;
   animation-timeline: scroll(root block);
-  animation-range: 0 80vh ;
+  animation-range: 0 40vh ;
+  padding: 5px;
+  margin: 0 auto;
+  width: 35vh;
 }
+
 @keyframes text-intro{
   to{
-    color: transparent;
-    display: none;
+    left: 0;
+   opacity: 0;
   }
+}
+@keyframes presentation{
+to{
+      font-size: 0px;
+    width: 0;
+}
 }
 @keyframes enhance-intro{
   to{
@@ -58,6 +94,12 @@ margin: 10px;
   }
 }
 
+@keyframes title-header{
+  to{
+ 
+ 
+  }
+}
 
 @media only screen and (max-width: 600px) {
   .intro{
@@ -71,7 +113,7 @@ margin: 10px;
     object-fit: cover;
     z-index: 1;
     display: flex;
-    height: 100vh;
+    height: 100dvh;
     width: 100%;
   }
   .text-intro{
@@ -79,10 +121,16 @@ margin: 10px;
     gap: 0;
   }
 
- 
+ .text-intro div{
+
+}
   .text-intro h1{
     margin: 0px;
+    width: 20vh;
   }
-
+  .text-intro p{
+    margin: 0px;
+    width: 20vh;
+  }
 
 }
