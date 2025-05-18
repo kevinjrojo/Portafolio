@@ -20,10 +20,11 @@ export const Intro = () => {
        <p >y soy</p>
         <h1>FRONT-END DEVELOPER</h1>
         </div>
+      <section className="main-title">
+        <h2>Sobre mi</h2>
+     </section>
      </article>
-     <article>
-      <h2>Sobre mi</h2>
-     </article>
+
     </header>
   );
 };

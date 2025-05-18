@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content:center;
- overflow: hidden;
+  overflow: hidden;
   height: 100dvh;
 }
 .photo {
@@ -12,7 +12,9 @@
   object-fit: cover;
   top: 0;
   z-index: 1;
-
+  animation: presentation linear both;
+  animation-timeline: scroll(root block);
+  animation-range: 0 70vh;
 }
 .photo-movil{
   display: none;
@@ -40,9 +42,10 @@
   grid-template-columns: auto auto;
   text-align: center;
   position: relative;
-    animation: title-header linear both;
+  animation: hide-text linear both;
   animation-timeline: scroll(root block);
-  animation-range: 0 90vh ;
+  animation-range: 0 37vh ;
+  
 }
 .text-intro div::before {
   content: "";
@@ -53,40 +56,52 @@
   left: 50%;
   transform: translateX(-2vh);
   z-index: 1;
-  animation: text-intro linear both;
-  animation-timeline: scroll(root block);
-  animation-range: 0 50vh ;
 }
 .text-intro h1 {
   color: var(--color-primary);
   padding: 5px;
   width: 35vh;
   margin: 0 auto;
-    animation: text-intro linear both;
+  animation: presentation linear both;
   animation-timeline: scroll(root block);
-  animation-range: 30vh 50vh ;
+  animation-range: 0 40vh ;
 }
 .text-intro p{
   color: var(--color-text);
   animation: presentation linear both;
   animation-timeline: scroll(root block);
-  animation-range: 0 40vh ;
+  animation-range: 0 35vh ;     /*esto se hace mas angosto apartir de 40vh*/
   padding: 5px;
   margin: 0 auto;
   width: 35vh;
 }
+.main-title{
+  color: var(--color-text);
+  font-size: 0px;
+  text-align: center;
+  width: 100%;
+  animation: title-main linear both;
+  animation-timeline: scroll(root block);
+  animation-range: 0 90vh;
+}
 
+@keyframes title-main{
+  to{
+    font-size: 16px;
+  }
+}
 @keyframes text-intro{
   to{
     left: 0;
    opacity: 0;
   }
- 
 }
 @keyframes presentation{
 to{
      font-size: 0px;
-    width: 0;
+
+      opacity: 0;
+    
 }
 }
 @keyframes enhance-intro{
@@ -96,10 +111,9 @@ to{
     height: 10vh;
   }
 }
-@keyframes title-header{
+@keyframes hide-text{
   to{
- 
- 
+    display: none;
   }
 }
 
