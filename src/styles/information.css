@@ -5,39 +5,35 @@
 }
 
 
-.information {
-  height: 100vh;
-}
-.target-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 100vh;
-  align-items: center;
-  margin: 0 auto;
-  font-size: 0.75em;
-   animation: reveal linear both;
+.main-information {
+   height: 100dvh;
+  width: 100%;
+align-content: center;
+  animation: reveal linear both;
   animation-timeline: view();
   animation-range: entry 35% cover 40%;
+ 
 }
-.imagen-autor {
-  margin: auto;
-  width: 54vh;
-  height: 75vh;
+.main-information div{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+   border: 2px var(--color-primary) solid;
+}
+
+.author-image {
+  width: 40dvh;
+  height: 60dvh;
   object-fit: cover;
-  border-radius: 40px;
+  border-radius: 10px;
 }
-.information-content {
-  width: 75vh;
-  height: 75vh;
-  background: var(--target-button);
+.information-container {
   display: flex;
   align-items: center;
- color: var(--color-text);
-  border-radius: 40px;
-  position: relative;
+  color: var(--color-text);
+  border-radius: 10px;
+  font-size: 0.7em;
 
-
- 
 }
 
 @keyframes reveal{
@@ -52,14 +48,3 @@
 }
 
 
-.information-text {
-  padding: 5%;
-  margin-top: 0px;
-  z-index: 2;
-  transition: all 0.9s ease-in-out;
-}
-
-
-.card {
-  display: none;
-}

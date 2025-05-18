@@ -4,17 +4,18 @@
   justify-content:center;
   overflow: hidden;
   height: 100dvh;
+  height: 100vh; /* fallback para navegadores antiguos */
 }
 .photo {
-  position: absolute;
+  position: fixed;
   height: 100dvh;
   width: 100%;
   object-fit: cover;
-  top: 0;
+   inset: 0;
   z-index: 1;
   animation: presentation linear both;
   animation-timeline: scroll(root block);
-  animation-range: 0 70vh;
+  animation-range: 0 50vh;
 }
 .photo-movil{
   display: none;
@@ -39,7 +40,7 @@
 }
 .text-intro div{
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
   text-align: center;
   position: relative;
   animation: hide-text linear both;
@@ -54,13 +55,13 @@
   width: 1px; 
   background-color: var(--color-text); 
   left: 50%;
-  transform: translateX(-2vh);
+  transform: translateX(-50%);
   z-index: 1;
 }
 .text-intro h1 {
   color: var(--color-primary);
   padding: 5px;
-  width: 35vh;
+  width:25dvw;
   margin: 0 auto;
   animation: presentation linear both;
   animation-timeline: scroll(root block);
@@ -73,7 +74,7 @@
   animation-range: 0 35vh ;     /*esto se hace mas angosto apartir de 40vh*/
   padding: 5px;
   margin: 0 auto;
-  width: 35vh;
+  width:25dvw;
 }
 .main-title{
   color: var(--color-text);
@@ -82,7 +83,7 @@
   width: 100%;
   animation: title-main linear both;
   animation-timeline: scroll(root block);
-  animation-range: 0 90vh;
+  animation-range: 0 85vh;
 }
 
 @keyframes title-main{
@@ -119,27 +120,20 @@ to{
 
 @media only screen and (max-width: 600px) {
   .intro{
-    height: 0vh;
+    height: 0;
   }
   .photo{
   display: none;
   }
   .photo-movil{
-    position: absolute;
+    position: fixed;
     object-fit: cover;
     z-index: 1;
     display: flex;
     height: 100dvh;
     width: 100%;
   }
-  .text-intro{
-    flex-direction: column;
-    gap: 0;
-  }
 
- .text-intro div{
-
-}
   .text-intro h1{
     margin: 0px;
     width: 20vh;

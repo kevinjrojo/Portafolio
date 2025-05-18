@@ -19,9 +19,7 @@
     background-size: cover;
     border-radius: 10px;
     display: flex;
-    overflow: hidden;
-    box-shadow: 0 0 0 4px #dd6e42;
- 
+  
        animation: reveal linear both;
   animation-timeline: view();
  animation-range: entry 20% cover 40%;
@@ -34,7 +32,7 @@
   }
 
   .card__content {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;

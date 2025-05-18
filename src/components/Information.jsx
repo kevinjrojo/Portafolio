@@ -1,20 +1,22 @@
 import "../styles/information.css";
 import img from "../assets/kevin3.webp";
-import { Element } from "react-scroll";
-import { InformationMovil } from "./InformationMovil.jsx";
+
+
 
 export const Information = () => {
   return (
-    <div className="information">
-      <Element name="targetSection" className="target-section">
+    <main className="main-information">
+      <div>
+      <section>
         <img
           src={img}
-          alt="imagen cactus"
-          className="imagen-autor"
+          alt="imagen-autor"
+          className="author-image"
           loading="lazy"
         />
-        <div className="information-content">
-          <p className="information-text">
+      </section>
+      <article className="information-container">
+          <p className="description">
             <h2>Sobre mi</h2>
             ¡Hola! Soy Kevin, un apasionado desarrollador front-end con
             experiencia en la creación de páginas web excepcionales. Con más de
@@ -37,9 +39,8 @@ export const Information = () => {
             desarrollador comprometido con la excelencia y la innovación, ¡me
             encantaría conectar contigo!
           </p>
-        </div>
-        <InformationMovil />
-      </Element>
-    </div>
+      </article>
+      </div>
+    </main>
   );
 };

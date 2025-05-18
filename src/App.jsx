@@ -3,7 +3,7 @@ import { Information } from "./components/Information";
 import { Intro } from "./components/Intro";
 import { Studies } from "./components/Studies";
 import { Contact } from "./components/Contact";
-import { InformationMovil } from "./components/InformationMovil";
+// import { InformationMovil } from "./components/InformationMovil";
 
 
 
@@ -14,7 +14,7 @@ function App() {
     <section className="secction">
       <Intro />
     <Information />
-       <InformationMovil />
+       {/* <InformationMovil /> */}
       {/* <Projects/> */}
       {/*<ProjectMovil Projects={projects} />*/}
       <Studies />

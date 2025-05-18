@@ -6,10 +6,10 @@ import photoMovil from "../assets/foto kevin 2.webp";
 export const Intro = () => {
 
   return (
-    <header className="intro" data-aos="fade-down">
+    <header className="intro" >
       <article>
-        <img src={photo} alt="Kevin Rojo" className="photo" />
-         <img src={photoMovil} alt="Kevin Rojo" className="photo-movil" />
+        <img src={photo} alt="author image" className="photo" />
+         <img src={photoMovil} alt="author image" className="photo-movil" />
       </article>
       <article className="text-intro">
         <div>
