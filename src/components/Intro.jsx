@@ -12,19 +12,18 @@ export const Intro = () => {
          <img src={photoMovil} alt="author image" className="photo-movil" />
       </article>
       <article className="text-intro">
-        <div>
-        <p >¡Hola! mi nombre es</p>
-         <h1>KEVIN JAVIER ROJO</h1>
-         </div>
-         <div>
-       <p >y soy</p>
-        <h1>FRONT-END DEVELOPER</h1>
+        <div className="text-presentation">
+          <p >¡Hola! mi nombre es</p>
+          <h1>KEVIN JAVIER ROJO</h1>
         </div>
-      <section className="main-title">
+        <div className="text-presentation">
+           <h1>FRONT-END DEVELOPER</h1>
+            <p >y soy</p>
+        </div>
+        <section className="main-title">
         <h2>Sobre mi</h2>
-     </section>
+        </section>
      </article>
-
     </header>
   );
 };

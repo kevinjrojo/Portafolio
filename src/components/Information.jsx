@@ -6,7 +6,7 @@ import img from "../assets/kevin3.webp";
 export const Information = () => {
   return (
     <main className="main-information">
-      <div>
+      <div className="information-card">
       <section>
         <img
           src={img}
