@@ -44,10 +44,7 @@ export const Intro = () => {
           <a href="https://wa.me/541126511587" target="_blank">
             <FaWhatsapp className="icon" />
           </a>
-          <a
-            href="/ruta-al-archivo/CV_Kevin_Rojo.pdf"
-            download="CV_Kevin_Rojo.pdf"
-          >
+          <a href="/cv-frontend.docx" download="cv-frontend.docx">
             <TbFileCv className="icon" />
           </a>
         </article>

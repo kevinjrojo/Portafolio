@@ -1,44 +1,25 @@
 import "../styles/project.css";
+import { projects } from "../service/data.js";
 
-export const Project = ({ Projects }) => {
+export const Project = () => {
   return (
-    <div className="projects-container">
-      <strong className="title">Proyectos</strong>
-      {Projects.map((Project, index) => (
-        <div key={index} className="target-project">
-          <div
-            className="card-proyect"
-            style={{
-              backgroundImage: `url(${Project.Image})`,
-            }}
-          >
-            <h3 className="tilte-proyect">{Project.Name}</h3>
-            <div className="card__content-proyect">
-              <p className="card__title-proyect">{Project.Name}</p>
-              <p className="card__description-proyect">{Project.Description}</p>
-              <nav className="card_link_project">
-                {" "}
-                <a
-                  href={Project.Link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="card__link_app"
-                >
-                  <strong>Ir a app</strong>
-                </a>
-                <a
-                  href={Project.Link2}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="card__link_code"
-                >
-                  <strong>Ir a code</strong>
-                </a>
-              </nav>
+    <main className="projects">
+      {projects.map((project, index) => (
+        <div key={index} className="project-card">
+          <div>
+            <h3>{project.Name}</h3>
+            <p>{project.Description}</p>
+            <div>
+              <a href={project.Link} target="_blank">
+                <strong>Ir a app</strong>
+              </a>
+              <a href={project.Link2} target="_blank">
+                <strong>Ir a code</strong>
+              </a>
             </div>
           </div>
         </div>
       ))}
-    </div>
+    </main>
   );
 };

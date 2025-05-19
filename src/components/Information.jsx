@@ -1,23 +1,21 @@
 import "../styles/information.css";
 import img from "../assets/kevin3.webp";
 
-
-
 export const Information = () => {
   return (
     <main className="main-information">
       <div className="information-card">
-      <section>
-        <img
-          src={img}
-          alt="imagen-autor"
-          className="author-image"
-          loading="lazy"
-        />
-      </section>
-      <article className="information-container">
+        <section>
+          <img
+            src={img}
+            alt="imagen-autor"
+            className="author-image"
+            loading="lazy"
+          />
+        </section>
+        <article className="information-container">
+          <h2>Sobre mi</h2>
           <p className="description">
-            <h2>Sobre mi</h2>
             ¡Hola! Soy Kevin, un apasionado desarrollador front-end con
             experiencia en la creación de páginas web excepcionales. Con más de
             2 años de experiencia en el campo, me especializo en convertir
@@ -39,7 +37,7 @@ export const Information = () => {
             desarrollador comprometido con la excelencia y la innovación, ¡me
             encantaría conectar contigo!
           </p>
-      </article>
+        </article>
       </div>
     </main>
   );
