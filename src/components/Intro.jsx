@@ -1,29 +1,57 @@
 import "../styles/intro.css";
-
 import photo from "../assets/photo.webp";
 import photoMovil from "../assets/foto kevin 2.webp";
+import { FaInstagram } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+import { TbFileCv } from "react-icons/tb";
 
 export const Intro = () => {
-
   return (
-    <header className="intro" >
+    <header className="intro">
       <article>
         <img src={photo} alt="author image" className="photo" />
-         <img src={photoMovil} alt="author image" className="photo-movil" />
+        <img src={photoMovil} alt="author image" className="photo-movil" />
       </article>
       <article className="text-intro">
         <div className="text-presentation">
-          <p >¡Hola! mi nombre es</p>
-          <h1>KEVIN JAVIER ROJO</h1>
+          <p>Hola,mi nombre es</p>
+          <strong>KEVIN JAVIER ROJO</strong>
         </div>
+        <hr />
         <div className="text-presentation">
-           <h1>FRONT-END DEVELOPER</h1>
-            <p >y soy</p>
+          <p>y soy</p>
+          <strong>FRONT-END DEVELOPER</strong>
         </div>
-        <section className="main-title">
-        <h2>Sobre mi</h2>
-        </section>
-     </article>
+        <article className="icon-presentation">
+          <a
+            href="https://www.linkedin.com/in/kevin-javier-rojo-a24492222/"
+            target="_blank"
+          >
+            <FaInstagram className="icon" />
+          </a>
+
+          <a href="https://github.com/kevinjrojo" target="_blank">
+            <FaGithub className="icon" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/kevin-javier-rojo-a24492222/"
+            target="_blank"
+          >
+            <FaLinkedin className="icon" />
+          </a>
+          <a href="https://wa.me/541126511587" target="_blank">
+            <FaWhatsapp className="icon" />
+          </a>
+          <a
+            href="/ruta-al-archivo/CV_Kevin_Rojo.pdf"
+            download="CV_Kevin_Rojo.pdf"
+          >
+            <TbFileCv className="icon" />
+          </a>
+        </article>
+      </article>
     </header>
   );
 };

@@ -7,11 +7,9 @@
 }
 * {
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
 }
 body {
   margin: 0;
   background-color: var(--background-color-page);
-
 }
-
-
