@@ -21,11 +21,4 @@ export const projects = [
     Link: "https://kevinjrojo.github.io/Juego_Palabras/",
     Link2: "https://github.com/kevinjrojo/Juego_Palabras",
   },
-  {
-    Name: "Citas aleatorias",
-
-    Image: "../assets/projects/citas-aleatorias.webp",
-    Link: "https://kevinjrojo.github.io/Juego_Palabras/",
-    Link2: "https://github.com/kevinjrojo/Juego_Palabras",
-  },
 ];

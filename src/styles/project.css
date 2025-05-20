@@ -1,45 +1,52 @@
-.project-container h2 {
-  height: 25dvb;
-  display: flex;
-  align-items: end;
-}
-.projects {
-  display: grid;
-  grid-template-columns: 45vh 45vh 45vh;
-  width: 100%;
-  height: 75dvh;
-  justify-content: center;
-  align-items: center;
-  animation: reveal linear both;
-  animation-timeline: view();
-  animation-range: entry 25% cover 40%;
-}
-
-.project-card {
-  color: var(--color-text);
+.project-container {
+  height: 80dvh;
+  width: 90%;
   background: linear-gradient(
     145deg,
     rgba(32, 32, 32, 0.75),
     rgba(45, 45, 45, 0.75)
   );
+  place-items: center;
+  margin: auto;
   border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.15);
+  animation: reveal linear both;
+  animation-timeline: view();
+  animation-range: entry 25% cover 40%;
+}
+.project-container h2 {
+  color: var(--color-text);
+}
+.projects {
+  display: grid;
+  grid-template-columns: 45vh 45vh 45vh;
+  width: 100%;
 
+  justify-content: center;
+}
+
+.project-card {
+  color: var(--color-text);
+  background-color: rgb(144, 144, 144);
+  margin: 3vh;
+  border-radius: 15px;
   text-align: center;
   height: 27dvh;
   width: 35dvh;
   padding: 15px;
 }
-.project-card p {
-  font-size: 0.7em;
-}
 
 @media only screen and (max-width: 600px) {
+  .project-container {
+    width: 90%;
+  }
   .projects {
-    grid-template-columns: 25vh 25vh;
+    grid-template-columns: 23vh 23vh;
+    place-items: center;
+    place-content: center;
   }
   .project-card {
-    margin: auto;
     height: 17dvh;
-    width: 17dvh;
+    width: 15dvh;
   }
 }
