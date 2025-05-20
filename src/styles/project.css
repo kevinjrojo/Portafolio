@@ -1,16 +1,21 @@
+.project-container h2 {
+  height: 25dvb;
+  display: flex;
+  align-items: end;
+}
 .projects {
-  height: 100vh;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  margin: auto;
-  gap: 15px;
+  grid-template-columns: 45vh 45vh 45vh;
   width: 100%;
+  height: 75dvh;
+  justify-content: center;
+  align-items: center;
   animation: reveal linear both;
   animation-timeline: view();
   animation-range: entry 25% cover 40%;
 }
+
 .project-card {
-  margin: auto;
   color: var(--color-text);
   background: linear-gradient(
     145deg,
@@ -18,179 +23,23 @@
     rgba(45, 45, 45, 0.75)
   );
   border-radius: 15px;
+
   text-align: center;
-  height: 40dvh;
+  height: 27dvh;
+  width: 35dvh;
   padding: 15px;
 }
 .project-card p {
   font-size: 0.7em;
 }
-/* .tilte-proyect {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  margin-top: 20%;
-  height: 30%;
-  width: 100%;
-  background-color: var(--secondary-color);
-  color: #ffff;
-}
-
-
-.card-proyect svg {
-  width: 48px;
-  fill: #333;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.card-proyect:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px #4f6d7a;
-}
-
-.card__content-proyect {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-  background-color: var(--secondary-color);
-  transform: rotateX(-90deg);
-  transform-origin: bottom;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.card-proyect:hover .card__content-proyect {
-  transform: rotateX(0deg);
-}
-
-.card__title-proyect {
-  margin: 0;
-  font-size: 24px;
-  color: #ffff;
-  font-weight: 700;
-}
-
-.card-proyect:hover svg {
-  scale: 0;
-}
-.card__description-proyect {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  margin: 10px 0 0;
-  font-size: 12px;
-  color: #ffff;
-  height: 10vh;
-}
-.card_link_project {
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: space-evenly;
-}
-.card__link_app {
-  margin-top: 10px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: var(--background-color-page);
-  border-bottom: 2px var(--background-color-page) solid;
-  padding: 5px;
-  text-decoration: none;
-}
-.card__link_app:hover {
-  color: white;
-  border-bottom: 2px white solid;
-  transition: 0.3s;
-}
-.card__link_code {
-  margin-top: 10px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: var(--background-color-page);
-  border-bottom: 2px var(--background-color-page) solid;
-  padding: 5px;
-  text-decoration: none;
-}
-.card__link_code:hover {
-  color: white;
-  border-bottom: 2px white solid;
-  transition: 0.3s;
-}
-.projects-container-movil {
-  display: none;
-}
 
 @media only screen and (max-width: 600px) {
-  .projects-container {
-    display: none;
+  .projects {
+    grid-template-columns: 25vh 25vh;
   }
-  .projects-container-movil {
-    height: 80vh;
-
-    display: grid;
+  .project-card {
+    margin: auto;
+    height: 17dvh;
+    width: 17dvh;
   }
-
-  .title-movil-project {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
-    color: white;
-    font-size: 40px;
-    padding: 2px;
-  }
-  .conteiner-project-card-movil {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-evenly;
-  }
-  .card-proyect-movil {
-    display: grid;
-    background-size: cover;
-    width: 170px;
-    height: 150px;
-    border-radius: 10px;
-    box-shadow: var(--secondary-color) 0px 0px 5px;
-    align-items: center;
-    overflow: hidden;
-  }
-  .tilte-proyect-movil {
-    text-align: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
-    color: #ffff;
-    padding: 5px;
-  }
-
-  .card_link_project_movil {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-evenly;
-  }
-  .card__link_app_movil {
-    font-size: 13px;
-
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
-    color: white;
-
-    text-decoration: none;
-    padding: 3px;
-  }
-  .card__link_code_movil {
-    font-size: 13px;
-    border-radius: 5px;
-    padding: 3px;
-    color: white;
-
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
-
-    text-decoration: none;
-  }
-} */
+}
