@@ -1,45 +1,45 @@
 import "../styles/project.css";
+import { useState } from "react";
+import { projects } from "../service/data.js";
 
-export const ProjectMovil = ({ Projects }) => {
+export const ProjectMovil = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handlePrev = () => {
+    setCurrentIndex((prev) => (prev === 0 ? projects.length - 1 : prev - 1));
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prev) => (prev === projects.length - 1 ? 0 : prev + 1));
+  };
+
+  const currentProject = projects[currentIndex];
   return (
-    <div className="projects-container-movil">
-      <nav className="conteiner-title-project">
-        <strong className="title-movil-project">Proyectos</strong>
-      </nav>
-      <main className="conteiner-project-card-movil">
-        {Projects.map((Project, index) => (
-          <div key={index}>
-            <div
-              className="card-proyect-movil"
-              style={{
-                backgroundImage: `url(${Project.Image})`,
-              }}
-            >
-              {" "}
-              <strong className="tilte-proyect-movil">{Project.Name}</strong>
-              <nav className="card_link_project_movil">
-                {" "}
-                <a
-                  href={Project.Link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="card__link_app_movil"
-                >
-                  <strong>Ir a app</strong>
+    <main className="main-projects-movil">
+      <div className="right" onClick={handlePrev}>
+        》
+      </div>
+      <div className="project-movil">
+        <h2>Proyectos</h2>
+        <article className="projects-movil">
+          <div className="project-card-movil">
+            <div className="project-card-info-movil">
+              <h3>{currentProject.Name}</h3>
+              <div>
+                <a href={currentProject.Link} target="_blank">
+                  <strong>app</strong>
                 </a>
-                <a
-                  href={Project.Link2}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="card__link_code_movil"
-                >
-                  <strong>Ir a code</strong>
+                <a href={currentProject.Link2} target="_blank">
+                  <strong>code</strong>
                 </a>
-              </nav>
+              </div>
             </div>
           </div>
-        ))}
-      </main>
-    </div>
+        </article>
+      </div>
+      <div className="left" onClick={handleNext}>
+        《
+      </div>
+    </main>
   );
 };

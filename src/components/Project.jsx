@@ -1,5 +1,6 @@
 import "../styles/project.css";
 import { projects } from "../service/data.js";
+import { ProjectMovil } from "./ProjectMovil.jsx";
 
 export const Project = () => {
   return (
@@ -24,6 +25,7 @@ export const Project = () => {
           ))}
         </article>
       </div>
+      <ProjectMovil />
     </main>
   );
 };

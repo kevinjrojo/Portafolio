@@ -39,7 +39,12 @@
   width: 35dvh;
   padding: 15px;
 }
-
+.right {
+  display: none;
+}
+.left {
+  display: none;
+}
 @media only screen and (max-width: 600px) {
   .main-project {
     width: 90%;
@@ -52,5 +57,20 @@
   .project-card {
     height: 17dvh;
     width: 15dvh;
+  }
+
+  .right {
+    border: 2px white solid;
+    display: flex;
+    position: relative;
+    left: 55%;
+    top: -34vh;
+  }
+  .left {
+    border: 2px white solid;
+    display: flex;
+    position: relative;
+    left: -55%;
+    top: 30vh;
   }
 }
