@@ -1,65 +1,35 @@
-:root {
-  --primary-color: #c0d6df;
-  --secondary-color: #dd6e42;
-  --target-button: #4f6d7a;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+.main-skills {
+  height: 100dvh;
+  place-content: center;
 }
 
-.conteiner-studies {
-  height: 100vh;
-}
-.title-studies {
-  display: grid;
-  margin-top: 2%;
-  font-size: 40px;
-  color: white;
-  border-bottom: 2px var(--secondary-color) solid;
-  width: 5%;
-  padding: 2px;
-}
-.text-conteiner-studies {
-  width: 85%;
-  margin: auto;
+.studies {
+  background: linear-gradient(
+    145deg,
+    rgba(32, 32, 32, 0.75),
+    rgba(45, 45, 45, 0.75)
+  );
   display: flex;
   flex-direction: column;
-  gap: 50px;
-}
-
-.description-studies {
-  color: white;
-  font-size: 1.1em;
-  justify-content: center;
-  display: flex;
   text-align: center;
-  width: 100%;
-}
-.conteiner-icon-studies {
-  display: flex;
-  gap: 10vh;
-  justify-content: center;
-  margin-top: 10%;
-}
-.logo-studies-html,
-.logo-studies-css,
-.logo-studies-js,
-.logo-studies-react,
-.logo-studies-node,
-.logo-studies-bootstrap,
-.logo-studies-sass,
-.logo-studies-github {
-  max-width: 50px;
+  color: var(--color-text);
+  padding: 15px;
 }
 
-.conteiner-certificates {
+.studies p {
+  width: 60%;
+  margin: auto;
+}
+
+.certificates {
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  justify-content: space-evenly;
-  margin-top: 5%;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  place-items: center;
+  margin: 5%;
 }
 .certificates-studies {
   cursor: pointer;
-  margin-top: 20px;
-  max-width: 240px;
+  max-width: 210px;
   transition: transform 0.2s ease;
 }
 .certificates-studies:hover {
@@ -98,53 +68,15 @@
   background-color: rgb(211, 21, 21);
 }
 @media only screen and (max-width: 600px) {
-  .conteiner-studies {
-    height: 85vh;
+  .certificates {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
-  .text-conteiner-studies {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-  }
-  .title-studies {
-    border-bottom: none;
-    width: 100%;
-    padding: 2px;
-  }
-  .description-studies {
-    color: white;
-    text-align: center;
-    align-items: center;
-  }
-  .conteiner-icon-studies {
-    display: flex;
-    gap: 2vh;
-    justify-content: center;
-    margin-top: 10%;
-  }
-  .logo-studies-html,
-  .logo-studies-css,
-  .logo-studies-js,
-  .logo-studies-react,
-  .logo-studies-node,
-  .logo-studies-bootstrap,
-  .logo-studies-sass,
-  .logo-studies-github {
-    max-width: 30px;
+  .studies p {
+    width: 95%;
   }
 
-  .conteiner-certificates {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-evenly;
-    margin-top: 10%;
-  }
   .certificates-studies {
-    cursor: pointer;
-    margin-top: 10px;
-    max-width: 170px;
-    transition: transform 0.2s ease;
+    max-width: 150px;
   }
 }

@@ -3,7 +3,7 @@ import { projects } from "../service/data.js";
 
 export const Project = () => {
   return (
-    <div className="project-container">
+    <div className="main-container">
       <h2>Proyectos</h2>
       <main className="projects">
         {projects.map((project, index) => (
