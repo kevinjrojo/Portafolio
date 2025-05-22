@@ -25,10 +25,7 @@ export const Intro = () => {
           <strong>FRONT-END DEVELOPER</strong>
         </div>
         <article className="icon-presentation">
-          <a
-            href="https://www.linkedin.com/in/kevin-javier-rojo-a24492222/"
-            target="_blank"
-          >
+          <a href="https://www.instagram.com/programacion_kr/" target="_blank">
             <FaInstagram className="icon" />
           </a>
 

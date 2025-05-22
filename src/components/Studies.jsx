@@ -24,8 +24,8 @@ export const Studies = () => {
     frontEndCertificates,
   ];
   return (
-    <div className="main-skills">
-      <main className="studies">
+    <main className="main-skills">
+      <div className="studies">
         <article className="text-studies">
           <strong>Skills</strong>
           <p>
@@ -55,7 +55,7 @@ export const Studies = () => {
             />
           </div>
         )}
-      </main>
-    </div>
+      </div>
+    </main>
   );
 };

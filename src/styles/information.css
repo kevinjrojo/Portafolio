@@ -1,7 +1,6 @@
 .main-information {
   height: 100dvh;
-  width: 100%;
-  align-content: center;
+  place-content: center;
   animation: reveal linear both;
   animation-timeline: view();
   animation-range: entry 35% cover 40%;

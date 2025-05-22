@@ -1,6 +1,11 @@
-.project-container {
-  height: 80dvh;
-  width: 90%;
+.main-projects {
+  height: 100dvh;
+  place-content: center;
+  animation: reveal linear both;
+  animation-timeline: view();
+  animation-range: entry 25% cover 40%;
+}
+.project {
   background: linear-gradient(
     145deg,
     rgba(32, 32, 32, 0.75),
@@ -10,11 +15,10 @@
   margin: auto;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.15);
-  animation: reveal linear both;
-  animation-timeline: view();
-  animation-range: entry 25% cover 40%;
+  margin: 5%;
+  padding: 3%;
 }
-.project-container h2 {
+.project h2 {
   color: var(--color-text);
 }
 .projects {
@@ -37,7 +41,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .project-container {
+  .main-project {
     width: 90%;
   }
   .projects {

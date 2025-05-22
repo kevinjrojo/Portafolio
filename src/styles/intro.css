@@ -84,14 +84,14 @@ hr {
 }
 .icon-presentation {
   display: flex;
-  gap: 5dvh;
+  gap: 5vh;
 }
 .icon {
   padding: 5px;
   background-color: var(--color-text);
   border-radius: 10dvh;
-  width: 4dvh;
-  height: 4dvh;
+  width: 4vh;
+  height: 4vh;
   transition: 0.2s;
   -webkit-box-reflect: below 10px linear-gradient(transparent, #c2c2c255);
   animation: icon-reflect linear both;

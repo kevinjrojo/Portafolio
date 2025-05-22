@@ -1,6 +1,10 @@
 .main-skills {
   height: 100dvh;
   place-content: center;
+  animation: reveal linear both;
+  animation-timeline: view();
+  animation-range: entry 35% cover 40%;
+  color: var(--color-text);
 }
 
 .studies {
@@ -13,19 +17,23 @@
   flex-direction: column;
   text-align: center;
   color: var(--color-text);
-  padding: 15px;
+  padding: 3%;
+  margin: 5%;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .studies p {
   width: 60%;
   margin: auto;
+  padding: 3%;
 }
 
 .certificates {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   place-items: center;
-  margin: 5%;
+  gap: 15px;
 }
 .certificates-studies {
   cursor: pointer;
