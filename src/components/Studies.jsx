@@ -4,6 +4,7 @@ import javascripCertificates from "../assets/certificates/javaScript.webp";
 import reactCertificates from "../assets/certificates/React js.webp";
 import frontEndCertificates from "../assets/certificates/Front-End.webp";
 import { useState } from "react";
+import { Icon } from "./Icon";
 
 export const Studies = () => {
   const [isZoomed, setIsZoomed] = useState(false);
@@ -55,6 +56,7 @@ export const Studies = () => {
             />
           </div>
         )}
+        <Icon />
       </div>
     </main>
   );

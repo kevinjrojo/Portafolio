@@ -1,0 +1,53 @@
+.icono {
+  position: relative;
+  overflow: hidden;
+  min-height: 3rem;
+  min-width: 20rem;
+  font-size: 2rem;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgb(0, 0, 0) 30%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
+.iconos {
+  width: 3ch;
+  transform: traslate(0px, -50%);
+  animation: loop 13s linear infinite;
+  left: 100%;
+
+  position: absolute;
+  max-width: 40px;
+  display: flex;
+}
+@keyframes loop {
+  to {
+    left: -1ch;
+  }
+}
+.infinite1 {
+  animation-delay: calc(38.5s / 24 * (24 - 1) * -1);
+}
+.infinite2 {
+  animation-delay: calc(38.5s / 24 * (24 - 2) * -1);
+}
+.infinite3 {
+  animation-delay: calc(38.5s / 24 * (24 - 3) * -1);
+}
+.infinite4 {
+  animation-delay: calc(38.5s / 24 * (24 - 4) * -1);
+}
+.infinite5 {
+  animation-delay: calc(38.5s / 24 * (24 - 5) * -1);
+}
+.infinite6 {
+  animation-delay: calc(38.5s / 24 * (24 - 6) * -1);
+}
+.infinite7 {
+  animation-delay: calc(38.5s / 24 * (24 - 7) * -1);
+}
+.infinite8 {
+  animation-delay: calc(38.5s / 24 * (24 - 8) * -1);
+}

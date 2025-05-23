@@ -45,32 +45,55 @@
 .left {
   display: none;
 }
+
+.main-projects-movil {
+  display: none;
+}
 @media only screen and (max-width: 600px) {
   .main-project {
-    width: 90%;
+    width: 0;
   }
-  .projects {
-    grid-template-columns: 23vh 23vh;
-    place-items: center;
-    place-content: center;
+  .main-projects-movil {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    height: 50%;
   }
-  .project-card {
-    height: 17dvh;
-    width: 15dvh;
-  }
-
-  .right {
-    border: 2px white solid;
+  .projects-movil {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(
+      145deg,
+      rgba(32, 32, 32, 0.75),
+      rgba(45, 45, 45, 0.75)
+    );
+    color: var(--color-text);
     display: flex;
+    flex-direction: column;
+
+    place-items: center;
+  }
+  .project {
+    display: none;
+  }
+  .project-card-movil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-link {
+    display: flex;
+    gap: 50px;
+  }
+  .right {
+    place-content: center;
+    cursor: pointer;
     position: relative;
-    left: 55%;
-    top: -34vh;
+    z-index: 1000;
   }
   .left {
-    border: 2px white solid;
-    display: flex;
+    cursor: pointer;
     position: relative;
-    left: -55%;
-    top: 30vh;
+    z-index: 1000;
+    place-content: center;
+    border: 2px white solid;
   }
 }

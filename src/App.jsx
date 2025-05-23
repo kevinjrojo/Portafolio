@@ -3,7 +3,6 @@ import { Information } from "./components/Information";
 import { Intro } from "./components/Intro";
 import { Project } from "./components/Project";
 import { Studies } from "./components/Studies";
-// import { Contact } from "./components/Contact";
 
 function App() {
   return (
@@ -12,7 +11,6 @@ function App() {
         <Intro />
         <Information />
         <Project />
-        {/*<ProjectMovil Projects={projects} />*/}
         <Studies />
       </section>
     </>

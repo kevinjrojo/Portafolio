@@ -14,32 +14,38 @@ export const ProjectMovil = () => {
   };
 
   const currentProject = projects[currentIndex];
+
   return (
     <main className="main-projects-movil">
-      <div className="right" onClick={handlePrev}>
-        》
-      </div>
-      <div className="project-movil">
-        <h2>Proyectos</h2>
-        <article className="projects-movil">
-          <div className="project-card-movil">
-            <div className="project-card-info-movil">
-              <h3>{currentProject.Name}</h3>
-              <div>
-                <a href={currentProject.Link} target="_blank">
-                  <strong>app</strong>
-                </a>
-                <a href={currentProject.Link2} target="_blank">
-                  <strong>code</strong>
-                </a>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-      <div className="left" onClick={handleNext}>
+      <span className="left" onClick={handlePrev}>
         《
-      </div>
+      </span>
+      <article className="projects-movil">
+        <h2>Proyectos</h2>
+        <div className="project-card-movil">
+          <h3>{currentProject.Name}</h3>
+          <p>{currentProject.Description}</p>
+          <div className="project-link">
+            <a
+              href={currentProject.Link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <strong>app</strong>
+            </a>
+            <a
+              href={currentProject.Link2}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <strong>code</strong>
+            </a>
+          </div>
+        </div>
+      </article>
+      <span className="right" onClick={handleNext}>
+        》
+      </span>
     </main>
   );
 };
