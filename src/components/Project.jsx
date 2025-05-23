@@ -1,6 +1,5 @@
 import "../styles/project.css";
 import { projects } from "../service/data.js";
-import { ProjectMovil } from "./ProjectMovil.jsx";
 
 export const Project = () => {
   return (
@@ -12,20 +11,19 @@ export const Project = () => {
             <div key={index} className="project-card">
               <div className="project-card-info">
                 <h3>{project.Name}</h3>
-                <div>
-                  <a href={project.Link} target="_blank">
-                    <strong>app</strong>
-                  </a>
-                  <a href={project.Link2} target="_blank">
-                    <strong>code</strong>
-                  </a>
-                </div>
+              </div>
+              <div>
+                <a href={project.Link} target="_blank">
+                  <strong>app</strong>
+                </a>
+                <a href={project.Link2} target="_blank">
+                  <strong>code</strong>
+                </a>
               </div>
             </div>
           ))}
         </article>
       </div>
-      <ProjectMovil />
     </main>
   );
 };

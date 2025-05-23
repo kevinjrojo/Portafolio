@@ -1,8 +1,8 @@
 import "../styles/studies.css";
-import desarrolorWebCertificates from "../assets/certificates/Desarrollo web.webp";
-import javascripCertificates from "../assets/certificates/javaScript.webp";
-import reactCertificates from "../assets/certificates/React js.webp";
-import frontEndCertificates from "../assets/certificates/Front-End.webp";
+import desarrollowebcertificates from "../assets/certificates/desarrollo-web.webp";
+import javascripcertificates from "../assets/certificates/javascript.webp";
+import reactcertificates from "../assets/certificates/react-js.webp";
+import frontendcertificates from "../assets/certificates/front-end.webp";
 import { useState } from "react";
 import { Icon } from "./Icon";
 
@@ -19,10 +19,10 @@ export const Studies = () => {
     setSelectedImage(null);
   };
   const images = [
-    desarrolorWebCertificates,
-    javascripCertificates,
-    reactCertificates,
-    frontEndCertificates,
+    desarrollowebcertificates,
+    javascripcertificates,
+    reactcertificates,
+    frontendcertificates,
   ];
   return (
     <main className="main-skills">

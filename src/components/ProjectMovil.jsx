@@ -21,31 +21,27 @@ export const ProjectMovil = () => {
         《
       </span>
       <article className="projects-movil">
-        <h2>Proyectos</h2>
+        <h2>Proyecto</h2>
         <div className="project-card-movil">
           <h3>{currentProject.Name}</h3>
-          <p>{currentProject.Description}</p>
-          <div className="project-link">
-            <a
-              href={currentProject.Link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <strong>app</strong>
-            </a>
-            <a
-              href={currentProject.Link2}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <strong>code</strong>
-            </a>
-          </div>
         </div>
+        <img src={currentProject.Image} alt={currentProject.Name} />
       </article>
       <span className="right" onClick={handleNext}>
         》
       </span>
+      <div className="project-link">
+        <a href={currentProject.Link} target="_blank" rel="noopener noreferrer">
+          <strong>app</strong>
+        </a>
+        <a
+          href={currentProject.Link2}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <strong>code</strong>
+        </a>
+      </div>
     </main>
   );
 };
