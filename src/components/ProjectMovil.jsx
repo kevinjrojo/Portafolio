@@ -1,6 +1,7 @@
 import "../styles/project.css";
 import { useState } from "react";
 import { projects } from "../service/data.js";
+import github from "../assets/icon/github.webp";
 
 export const ProjectMovil = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -16,32 +17,52 @@ export const ProjectMovil = () => {
   const currentProject = projects[currentIndex];
 
   return (
-    <main className="main-projects-movil">
+    <main className="main-projects">
       <span className="left" onClick={handlePrev}>
         《
       </span>
-      <article className="projects-movil">
+
+      <article className="projects">
         <h2>Proyecto</h2>
-        <div className="project-card-movil">
-          <h3>{currentProject.Name}</h3>
+        <div className="project-content">
+          <div className="project-card">
+            <h3>{currentProject.Name}</h3>
+            <img
+              src={currentProject.Image}
+              alt={currentProject.Name}
+              className="project-image"
+            />
+          </div>
         </div>
-        <img src={currentProject.Image} alt={currentProject.Name} />
+        <div className="project-link">
+          <a
+            href={currentProject.Link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={currentProject.Icon}
+              alt={currentProject.Name}
+              className="project-icon"
+            />
+          </a>
+          <a
+            href={currentProject.Link2}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={github}
+              alt={currentProject.Name}
+              className="project-icon"
+            />
+          </a>
+        </div>
       </article>
+
       <span className="right" onClick={handleNext}>
         》
       </span>
-      <div className="project-link">
-        <a href={currentProject.Link} target="_blank" rel="noopener noreferrer">
-          <strong>app</strong>
-        </a>
-        <a
-          href={currentProject.Link2}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <strong>code</strong>
-        </a>
-      </div>
     </main>
   );
 };

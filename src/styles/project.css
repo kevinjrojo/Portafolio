@@ -1,87 +1,59 @@
 .main-projects {
-  height: 100dvh;
-  place-content: center;
-  animation: reveal linear both;
-  animation-timeline: view();
-  animation-range: entry 25% cover 40%;
-}
-.project {
-  background: linear-gradient(
-    145deg,
-    rgba(32, 32, 32, 0.75),
-    rgba(45, 45, 45, 0.75)
-  );
-  place-items: center;
-  margin: auto;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.15);
-  margin: 5%;
-  padding: 3%;
-}
-.project h2 {
-  color: var(--color-text);
-}
-.projects {
-  display: grid;
-  grid-template-columns: 45vh 45vh 45vh;
-  width: 100%;
-
-  justify-content: center;
-}
-
-.project-card {
-  color: var(--color-text);
-  background-color: rgb(144, 144, 144);
-  margin: 3vh;
-  border-radius: 15px;
-  text-align: center;
-  height: 27dvh;
-  width: 35dvh;
-  padding: 15px;
-}
-
-/* parte movil */
-
-.main-projects-movil {
-  place-content: center;
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
-  grid-template-rows: 80vh 20vh;
+  height: 100dvh;
+  align-items: center;
+  justify-items: center;
 }
-.projects-movil {
+.projects {
   color: var(--color-text);
   display: flex;
   flex-direction: column;
   justify-content: center;
   place-items: center;
+  gap: 1rem;
+  width: 100%;
+  border-radius: 15px;
+  grid-row: span 1 / span 1;
+  background: linear-gradient(
+    145deg,
+    rgba(32, 32, 32, 0.75),
+    rgba(45, 45, 45, 0.75)
+  );
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+.projects h2 {
+  position: relative;
+}
+
+.project-card {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  z-index: 4;
+  text-align: center;
   animation: reveal linear both;
   animation-timeline: view();
   animation-range: entry 25% cover 40%;
 }
-.projects-movil h2 {
+.project-card h3 {
   position: absolute;
   z-index: 3;
-}
-
-.project-card-movil {
-  background-color: cadetblue;
-  z-index: 4;
-}
-.project-card-movil h3 {
-  position: absolute;
-  z-index: 3;
-  margin-top: 20%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
-  left: 0;
   justify-content: center;
   display: flex;
 }
-.projects-movil img {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.15);
+.project-image {
   filter: brightness(0.4);
-  max-width: 100%;
+  width: 100%;
   position: relative;
   z-index: 0;
+  height: auto;
+  border-radius: 8px;
 }
 .project-link {
   grid-column: span 3 / span 3;
@@ -89,6 +61,9 @@
   z-index: 3;
   text-align: center;
   width: 100%;
+}
+.project-icon {
+  width: 40px;
 }
 .project-link a {
   margin: 20px;
@@ -149,6 +124,5 @@
     position: relative;
     z-index: 1000;
     place-content: center;
-    border: 2px white solid;
   }
 }
