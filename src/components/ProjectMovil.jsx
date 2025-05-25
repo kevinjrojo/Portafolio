@@ -21,16 +21,24 @@ export const ProjectMovil = () => {
       <span className="left" onClick={handlePrev}>
         《
       </span>
-
       <article className="projects">
         <h2>Proyecto</h2>
         <div className="project-content">
+          <strong>
+            ￣￣￣￣￣￣￣
+            <br />○
+          </strong>
           <div className="project-card">
             <h3>{currentProject.Name}</h3>
             <img
               src={currentProject.Image}
               alt={currentProject.Name}
               className="project-image"
+            />
+            <img
+              src={currentProject.Image2}
+              alt={currentProject.Name}
+              className="project-image-movil"
             />
           </div>
         </div>
