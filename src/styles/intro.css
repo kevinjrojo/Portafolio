@@ -4,6 +4,7 @@
   justify-content: center;
   overflow: hidden;
   height: 100vh;
+  height: 100dvh;
 }
 .photo {
   position: fixed;
@@ -11,17 +12,14 @@
   width: 100%;
   object-fit: cover;
   inset: 0;
-  z-index: 1;
-  animation: presentation linear both;
-  animation-timeline: scroll(root block);
-  animation-range: 0 50vh;
+  z-index: 0;
 }
 .photo-movil {
   display: none;
 }
 .text-intro {
   position: fixed;
-  background-color: rgba(32, 32, 32, 0.648);
+  background-color: rgba(37, 37, 37, 0.648);
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -63,7 +61,7 @@
   padding: 5px;
   margin: 0;
   margin-right: 30%;
-  font-size: 20px;
+  font-size: 1.5em;
   animation: presentation linear both;
   animation-timeline: scroll(root block);
   animation-range: 0 40vh;
@@ -73,7 +71,7 @@
   padding: 5px;
   margin: 0;
   margin-left: 30%;
-  font-size: 20px;
+  font-size: 1.4em;
   animation: presentation linear both;
   animation-timeline: scroll(root block);
   animation-range: 0 35vh;
@@ -126,8 +124,8 @@ a {
 }
 @keyframes enhance-intro {
   to {
-    background: rgba(10, 10, 10, 0.503);
-    backdrop-filter: blur(5px);
+    background-color: rgba(37, 37, 37, 0.648);
+    backdrop-filter: blur(1px);
     height: 10vh;
   }
 }
@@ -149,13 +147,11 @@ a {
     display: inline;
     position: fixed;
     height: 100dvh;
+    height: 100vh;
     width: 100%;
     object-fit: cover;
     inset: 0;
-    z-index: 1;
-    animation: presentation linear both;
-    animation-timeline: scroll(root block);
-    animation-range: 0 50vh;
+    z-index: 0;
   }
   .text-presentation {
     display: grid;

@@ -19,17 +19,18 @@
   padding: 3vh;
   background: linear-gradient(
     145deg,
-    rgba(32, 32, 32, 0.75),
-    rgba(45, 45, 45, 0.75)
+    rgba(110, 110, 110, 0.75),
+    rgba(128, 128, 128, 0.75)
   );
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 8px rgba(184, 184, 184, 0.2),
+    0 6px 20px rgba(189, 189, 189, 0.15);
   animation: reveal linear both;
   animation-timeline: view();
   animation-range: entry 25% cover 40%;
 }
 .projects h2 {
   position: relative;
-  color: black;
+  color: var(--color-text);
 }
 
 .project-card {
@@ -71,6 +72,8 @@
 }
 .project-icon {
   width: 40px;
+  height: 40px;
+  color: white;
 }
 .right,
 .left {
@@ -80,6 +83,7 @@
   z-index: 3;
   font-size: 50px;
   height: 65%;
+  color: var(--color-text);
 }
 
 .project-image-movil {
@@ -100,25 +104,25 @@
     text-align-last: center;
     background: linear-gradient(
       145deg,
-      rgba(32, 32, 32, 0.75),
-      rgba(45, 45, 45, 0.75)
+      rgba(110, 110, 110, 0.75),
+      rgba(128, 128, 128, 0.75)
     );
     margin: auto;
     place-content: center;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.15);
     padding: 7px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.15);
     z-index: 1;
   }
   .project-content strong {
     display: inline;
     position: relative;
-
     color: white;
     top: -11px;
   }
   .projects h2 {
     color: black;
+    background-color: var(--color-text);
   }
   .project-card {
     display: flex;

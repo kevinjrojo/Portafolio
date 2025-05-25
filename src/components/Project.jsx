@@ -1,10 +1,11 @@
 import "../styles/project.css";
 import { useState } from "react";
 import { projects } from "../service/data.js";
-import github from "../assets/icon/github.webp";
+
 import { TiChevronRight } from "react-icons/ti";
 import { TiChevronLeft } from "react-icons/ti";
 import { useSwipeable } from "react-swipeable";
+import { FaGithub } from "react-icons/fa";
 
 export const Project = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -69,11 +70,7 @@ export const Project = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src={github}
-              alt={currentProject.Name}
-              className="project-icon"
-            />
+            <FaGithub className="project-icon" />
           </a>
         </div>
       </article>
