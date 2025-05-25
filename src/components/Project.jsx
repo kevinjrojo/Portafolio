@@ -4,8 +4,9 @@ import { projects } from "../service/data.js";
 import github from "../assets/icon/github.webp";
 import { TiChevronRight } from "react-icons/ti";
 import { TiChevronLeft } from "react-icons/ti";
+import { useSwipeable } from "react-swipeable";
 
-export const ProjectMovil = () => {
+export const Project = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrev = () => {
@@ -16,10 +17,17 @@ export const ProjectMovil = () => {
     setCurrentIndex((prev) => (prev === projects.length - 1 ? 0 : prev + 1));
   };
 
+  const handlers = useSwipeable({
+    onSwipedLeft: () => handleNext(),
+    onSwipedRight: () => handlePrev(),
+    preventDefaultTouchmoveEvent: true,
+    trackMouse: true,
+  });
+
   const currentProject = projects[currentIndex];
 
   return (
-    <main className="main-projects">
+    <main className="main-projects" {...handlers}>
       <span className="left" onClick={handlePrev}>
         <TiChevronLeft />
       </span>

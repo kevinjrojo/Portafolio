@@ -3,7 +3,7 @@ import { Information } from "./components/Information";
 import { Intro } from "./components/Intro";
 
 import { Studies } from "./components/Studies";
-import { ProjectMovil } from "./components/ProjectMovil";
+import { Project } from "./components/Project";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         <Intro />
         <Information />
 
-        <ProjectMovil />
+        <Project />
         <Studies />
       </section>
     </>

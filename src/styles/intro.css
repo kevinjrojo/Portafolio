@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
-  height: 100dvh;
   height: 100vh;
 }
 .photo {
@@ -158,7 +157,6 @@ a {
     animation-timeline: scroll(root block);
     animation-range: 0 50vh;
   }
-
   .text-presentation {
     display: grid;
     grid-template-columns: 1fr;
