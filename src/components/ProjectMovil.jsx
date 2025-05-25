@@ -2,6 +2,8 @@ import "../styles/project.css";
 import { useState } from "react";
 import { projects } from "../service/data.js";
 import github from "../assets/icon/github.webp";
+import { TiChevronRight } from "react-icons/ti";
+import { TiChevronLeft } from "react-icons/ti";
 
 export const ProjectMovil = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -19,7 +21,7 @@ export const ProjectMovil = () => {
   return (
     <main className="main-projects">
       <span className="left" onClick={handlePrev}>
-        《
+        <TiChevronLeft />
       </span>
       <article className="projects">
         <h2>Proyecto</h2>
@@ -67,9 +69,8 @@ export const ProjectMovil = () => {
           </a>
         </div>
       </article>
-
       <span className="right" onClick={handleNext}>
-        》
+        <TiChevronRight />
       </span>
     </main>
   );
