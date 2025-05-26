@@ -1,6 +1,6 @@
 import "../styles/intro.css";
-import photo from "../assets/photo.webp";
-import photoMovil from "../assets/foto kevin 2.webp";
+import photo from "../assets/user/photo-kevin2.webp";
+import photoMovil from "../assets/user/photo-kevin1.webp";
 import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";

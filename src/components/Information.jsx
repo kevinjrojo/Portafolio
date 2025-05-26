@@ -1,5 +1,5 @@
 import "../styles/information.css";
-import img from "../assets/kevin3.webp";
+import img from "../assets/user/photo-kevin3.webp";
 
 export const Information = () => {
   return (

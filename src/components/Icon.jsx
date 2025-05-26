@@ -1,5 +1,4 @@
 import "../styles/icon.css";
-
 import { SiCss3 } from "react-icons/si";
 import { SiGithub } from "react-icons/si";
 import { SiReact } from "react-icons/si";
