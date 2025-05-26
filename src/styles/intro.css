@@ -21,13 +21,11 @@
   position: fixed;
   background-color: rgba(37, 37, 37, 0.648);
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
   top: 0;
-  left: 0;
   height: 100dvh;
   width: 100%;
   z-index: 3;
@@ -45,7 +43,6 @@
   animation-range: 30.5vh 30vh;
   width: 100%;
 }
-
 .text-presentation::before {
   content: "";
   position: absolute;
@@ -59,7 +56,6 @@
 .text-intro strong {
   color: var(--color-primary);
   padding: 5px;
-  margin: 0;
   margin-right: 30%;
   font-size: 1.5em;
   animation: presentation linear both;
@@ -81,7 +77,7 @@ hr {
 }
 .icon-presentation {
   display: flex;
-  gap: 5vh;
+  gap: 10vh;
 }
 .icon {
   padding: 5px;
@@ -95,16 +91,16 @@ hr {
   animation-timeline: scroll(root block);
   animation-range: 0vh 35vh;
 }
+.icon:hover {
+  color: var(--color-primary);
+  transition: 0.2s;
+}
 a {
   color: black;
   padding: 0;
   margin: 0;
 }
 
-.icon:hover {
-  color: var(--color-primary);
-  transition: 0.2s;
-}
 @keyframes icon-reflect {
   0% {
     -webkit-box-reflect: below 10px linear-gradient(transparent, #c2c2c24d);
@@ -158,7 +154,6 @@ a {
   .photo-movil {
     display: inline;
     position: fixed;
-    height: 100dvh;
     height: 100vh;
     width: 100%;
     object-fit: cover;
@@ -195,5 +190,8 @@ a {
 
   .text-intro p {
     display: none;
+  }
+  .icon-presentation {
+    gap: 4vh;
   }
 }

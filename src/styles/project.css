@@ -9,10 +9,9 @@
   color: var(--color-text);
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 90%;
   width: 100%;
   place-content: center;
-  grid-row: span 1 / span 1;
 }
 .project-content {
   border-radius: 15px;
@@ -33,15 +32,15 @@
 .projects h2 {
   position: relative;
   color: var(--color-text);
+  margin: 10px;
 }
 
 .project-card {
   position: relative;
   width: 100%;
-  max-width: 800px;
   height: auto;
   margin: auto;
-  z-index: 4;
+  z-index: 3;
 }
 .project-card h3 {
   position: absolute;
@@ -54,20 +53,18 @@
   display: flex;
 }
 .project-image {
-  filter: brightness(0.4);
+  filter: brightness(0.3);
   width: 100%;
   position: relative;
-  height: auto;
   border-radius: 15px;
 }
 .project-link {
-  grid-column: span 3 / span 3;
-  grid-row: span 1 / span 1;
   z-index: 3;
   text-align: center;
   width: 100%;
-  margin-top: 1em;
-  height: 70px;
+  animation: reveal linear both;
+  animation-timeline: view();
+  animation-range: entry -300% cover 80%;
 }
 .project-link a {
   margin: 25px;
@@ -83,13 +80,11 @@
   cursor: pointer;
   position: relative;
   z-index: 3;
-  font-size: 50px;
+  font-size: 60px;
   height: 65%;
-
   place-content: center;
   color: var(--color-text);
 }
-
 .project-image-movil {
   display: none;
 }
@@ -100,45 +95,32 @@
   .main-projects {
     height: auto;
   }
-  .projects {
-    background: none;
-    box-shadow: none;
-  }
   .project-content {
     text-align-last: center;
-    margin: auto;
-    place-content: center;
     border-radius: 15px;
-    padding: 7px;
+    padding: 3px;
     z-index: 1;
     width: 90%;
-  }
-  .project-content strong {
-    display: inline;
-    position: relative;
-    color: var(--color-text);
   }
 
   .project-card {
     display: flex;
     border-radius: 15px;
     width: 100%;
-
     place-content: center;
   }
   .project-image-movil {
-    width: 34vh;
+    width: 95%;
     position: relative;
     z-index: 1;
     height: 63vh;
-    border-radius: 8px;
+    border-radius: 15px;
     display: inline;
     object-fit: cover;
   }
   .project-image {
     display: none;
   }
-
   .right,
   .left {
     place-content: center;
@@ -151,9 +133,6 @@
   .project-link {
     width: 100%;
     border: none;
-    height: auto;
-  }
-  .project-link a {
-    margin: 25px;
+    margin-top: 8px;
   }
 }
