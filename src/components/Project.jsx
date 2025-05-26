@@ -33,11 +33,9 @@ export const Project = () => {
         <TiChevronLeft />
       </span>
       <article className="projects">
-        <h2>Proyecto</h2>
         <div className="project-content">
           <strong>
-            ￣￣￣￣￣￣￣
-            <br />○
+            <h2>Proyecto</h2>
           </strong>
           <div className="project-card">
             <h3>{currentProject.Name}</h3>

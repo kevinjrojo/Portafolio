@@ -3,15 +3,15 @@
   place-content: center;
   animation: reveal linear both;
   animation-timeline: view();
-  animation-range: entry 35% cover 40%;
+  animation-range: entry 50% cover 90%;
   z-index: 3;
 }
 .main-information div {
   display: grid;
   grid-template-columns: 2fr 3fr;
-  padding: 3%;
-  margin: 5%;
-  align-items: center;
+  padding: 1%;
+  width: 80%;
+  margin: auto;
   background: linear-gradient(
     145deg,
     rgba(110, 110, 110, 0.75),
@@ -23,10 +23,11 @@
   z-index: 3;
 }
 .author-image {
+  margin: auto;
   width: 40vh;
-  height: 60dvh;
+  height: 60vh;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 15px;
   z-index: 3;
 }
 .information-container {
@@ -34,15 +35,21 @@
   flex-direction: column;
   align-items: center;
   color: var(--color-text);
-  font-size: 0.9em;
+  font-size: 0.84em;
 }
 
 @keyframes reveal {
-  from {
+  0% {
     opacity: 0;
   }
-  to {
+  30% {
     opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
@@ -50,15 +57,23 @@
   .main-information div {
     grid-template-columns: 1fr;
     z-index: 2;
+    padding: 4%;
   }
   .author-image {
-    height: 63.5vh;
     z-index: 1;
+  }
+  .information-card {
+    position: relative;
+  }
+  .information-card img {
     display: flex;
     position: absolute;
     filter: brightness(0.3);
-  }
-  .information-card {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    height: 95%;
   }
   .information-container {
     z-index: 2;

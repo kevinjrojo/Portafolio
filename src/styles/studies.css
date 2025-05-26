@@ -3,7 +3,7 @@
   place-content: center;
   animation: reveal linear both;
   animation-timeline: view();
-  animation-range: entry 35% cover 40%;
+  animation-range: entry 50% cover 90%;
   color: var(--color-text);
 }
 

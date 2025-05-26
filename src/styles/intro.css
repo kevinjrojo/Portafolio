@@ -90,7 +90,7 @@ hr {
   width: 4vh;
   height: 4vh;
   transition: 0.2s;
-  -webkit-box-reflect: below 10px linear-gradient(transparent, #c2c2c255);
+  -webkit-box-reflect: below 10px linear-gradient(transparent, #c2c2c271);
   animation: icon-reflect linear both;
   animation-timeline: scroll(root block);
   animation-range: 0vh 35vh;
@@ -106,8 +106,20 @@ a {
   transition: 0.2s;
 }
 @keyframes icon-reflect {
-  to {
-    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent);
+  0% {
+    -webkit-box-reflect: below 10px linear-gradient(transparent, #c2c2c24d);
+  }
+  30% {
+    -webkit-box-reflect: below 10px linear-gradient(transparent, #c2c2c233);
+  }
+  60% {
+    -webkit-box-reflect: below 10px linear-gradient(transparent, #c2c2c215);
+  }
+  80% {
+    -webkit-box-reflect: below 10px linear-gradient(transparent, #c2c2c20e);
+  }
+  100% {
+    -webkit-box-reflect: below 10px linear-gradient(transparent, transparent);
   }
 }
 @keyframes text-intro {
