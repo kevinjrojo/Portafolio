@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "../styles/contact.css";
+import { FaUser } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -43,27 +45,31 @@ export const Contact = () => {
       <section className="contact-form">
         <h2>Contáctame</h2>
         <form onSubmit={handleSubmit} className="form">
-          <label htmlFor="name">Nombre</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            className="inputs"
-            required
-            value={formData.name}
-            onChange={handleChange}
-          />
-
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            className="inputs"
-            value={formData.email}
-            onChange={handleChange}
-          />
-
+          <label htmlFor="Name">
+            <FaUser className="contact-icon" />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              className="inputs"
+              required
+              value={formData.name}
+              onChange={handleChange}
+              placeholder="Name"
+            />
+          </label>
+          <label htmlFor="Email">
+            <MdEmail className="contact-icon" />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              className="inputs"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="Email"
+            />
+          </label>
           <label htmlFor="message-input">Mensaje</label>
           <textarea
             id="message-input"
@@ -74,7 +80,9 @@ export const Contact = () => {
             onChange={handleChange}
           />
 
-          <button type="submit" className="button">Enviar</button>
+          <button type="submit" className="button">
+            Enviar
+          </button>
         </form>
       </section>
     </article>

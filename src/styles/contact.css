@@ -15,7 +15,7 @@
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(184, 184, 184, 0.2),
     0 6px 20px rgba(189, 189, 189, 0.15);
-  width: 80%;
+  width: 50%;
   margin: auto;
 }
 .contact-form form {
@@ -24,26 +24,43 @@
   gap: 20px;
   padding: 5%;
 }
-.contact-form input{
-  padding: 10px;
+.contact-form input {
+  padding-left: 20px;
+  margin: 10px 0;
+  height: 30px;
 }
-.inputs{ 
-  border: 1.5px var(--color-text) solid;
-  border-radius: 5px;
+.contact-icon {
+  position: absolute;
+  margin-top: 15px;
+}
+.inputs {
+  width: 100%;
+  border: none;
+  border-bottom: 1px var(--color-text) solid;
   background-color: transparent;
+  box-sizing: border-box;
   color: var(--color-text);
 }
-.button{
-  background: var(--color-text);
-  border: none;
+
+.inputs:focus {
+  outline: none;
+}
+.inputs ::placeholder {
+  color: rgb(171, 171, 171);
+}
+.button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px var(--color-text) solid;
   padding: 5px;
   width: 30%;
-  margin:auto;
-  color: black;
+  margin: auto;
+  color: white;
   border-radius: 5px;
 }
 
 @media only screen and (max-width: 600px) {
-  .conctact {
+  .contact-form {
+    width: 80%;
   }
 }
