@@ -1,6 +1,6 @@
 .contact {
   height: 100vh;
-  color: white;
+  color: var(--color-text);
   z-index: 4;
   position: relative;
   place-content: center;
@@ -15,7 +15,7 @@
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(184, 184, 184, 0.2),
     0 6px 20px rgba(189, 189, 189, 0.15);
-  width: 50%;
+  width: 80%;
   margin: auto;
 }
 .contact-form form {
@@ -23,6 +23,24 @@
   flex-direction: column;
   gap: 20px;
   padding: 5%;
+}
+.contact-form input{
+  padding: 10px;
+}
+.inputs{ 
+  border: 1.5px var(--color-text) solid;
+  border-radius: 5px;
+  background-color: transparent;
+  color: var(--color-text);
+}
+.button{
+  background: var(--color-text);
+  border: none;
+  padding: 5px;
+  width: 30%;
+  margin:auto;
+  color: black;
+  border-radius: 5px;
 }
 
 @media only screen and (max-width: 600px) {

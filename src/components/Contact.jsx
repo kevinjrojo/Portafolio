@@ -42,12 +42,13 @@ export const Contact = () => {
     <article className="contact" id="contact-me">
       <section className="contact-form">
         <h2>Contáctame</h2>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="form">
           <label htmlFor="name">Nombre</label>
           <input
             type="text"
             name="name"
             id="name"
+            className="inputs"
             required
             value={formData.name}
             onChange={handleChange}
@@ -58,7 +59,7 @@ export const Contact = () => {
             type="email"
             name="email"
             id="email"
-            required
+            className="inputs"
             value={formData.email}
             onChange={handleChange}
           />
@@ -67,12 +68,13 @@ export const Contact = () => {
           <textarea
             id="message-input"
             name="message"
+            className="inputs"
             required
             value={formData.message}
             onChange={handleChange}
           />
 
-          <button type="submit">Enviar</button>
+          <button type="submit" className="button">Enviar</button>
         </form>
       </section>
     </article>
