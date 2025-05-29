@@ -1,12 +1,15 @@
 .contact {
   height: 100vh;
   color: var(--color-text);
-  z-index: 4;
-  position: relative;
+  z-index: 3;
   place-content: center;
-  text-align: center;
+
+  animation: reveal linear both;
+  animation-timeline: view();
+  animation-range: entry 50% cover 90%;
 }
 .contact-form {
+  text-align: center;
   background: linear-gradient(
     145deg,
     rgba(110, 110, 110, 0.75),

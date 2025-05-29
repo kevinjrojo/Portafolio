@@ -99,6 +99,9 @@ a {
   color: black;
   padding: 0;
   margin: 0;
+  animation: icon-contact linear both;
+  animation-timeline: scroll(root block);
+  animation-range: 350vh 20vh;
 }
 
 @keyframes icon-reflect {
@@ -116,6 +119,11 @@ a {
   }
   100% {
     -webkit-box-reflect: below 10px linear-gradient(transparent, transparent);
+  }
+}
+@keyframes icon-contact {
+  to {
+    color: var(--color-primary);
   }
 }
 @keyframes text-intro {
