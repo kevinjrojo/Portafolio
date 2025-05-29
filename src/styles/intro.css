@@ -95,15 +95,14 @@ hr {
   color: var(--color-primary);
   transition: 0.2s;
 }
-a {
+.intro-icon {
   color: black;
   padding: 0;
   margin: 0;
   animation: icon-contact linear both;
-  animation-timeline: scroll(root block);
-  animation-range: 350vh 20vh;
+  animation-timeline: view();
+  animation-range: cover 430%;
 }
-
 @keyframes icon-reflect {
   0% {
     -webkit-box-reflect: below 10px linear-gradient(transparent, #c2c2c24d);
@@ -149,6 +148,11 @@ a {
   to {
     width: 0;
     display: none;
+  }
+}
+@keyframes hide-contact {
+  to {
+    width: 100%;
   }
 }
 

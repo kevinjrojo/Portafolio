@@ -1,9 +1,9 @@
 .contact {
   height: 100vh;
+  overflow-y: auto;
   color: var(--color-text);
   z-index: 3;
   place-content: center;
-
   animation: reveal linear both;
   animation-timeline: view();
   animation-range: entry 50% cover 90%;
@@ -37,12 +37,15 @@
   margin-top: 15px;
 }
 .inputs {
-  width: 100%;
+  width: 0%;
   border: none;
   border-bottom: 1px var(--color-text) solid;
   background-color: transparent;
   box-sizing: border-box;
   color: var(--color-text);
+  animation: hide-contact linear both;
+  animation-timeline: scroll(root block);
+  animation-range: 350vh 390vh;
 }
 
 .inputs:focus {
@@ -63,7 +66,16 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .contact {
+  }
   .contact-form {
+    place-content: center;
     width: 80%;
+    height: 60%;
+  }
+  .inputs {
+    animation: hide-contact linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 320vh 365vh;
   }
 }

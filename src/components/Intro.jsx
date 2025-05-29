@@ -25,23 +25,40 @@ export const Intro = () => {
           <strong>FRONT-END DEVELOPER</strong>
         </div>
         <article className="icon-presentation">
-          <a href="https://www.instagram.com/programacion_kr/" target="_blank">
+          <a
+            href="https://www.instagram.com/programacion_kr/"
+            target="_blank"
+            className="intro-icon"
+          >
             <FaInstagram className="icon" />
           </a>
 
-          <a href="https://github.com/kevinjrojo" target="_blank">
+          <a
+            href="https://github.com/kevinjrojo"
+            target="_blank"
+            className="intro-icon"
+          >
             <FaGithub className="icon" />
           </a>
           <a
             href="https://www.linkedin.com/in/kevin-javier-rojo-a24492222/"
             target="_blank"
+            className="intro-icon"
           >
             <FaLinkedin className="icon" />
           </a>
-          <a href="https://wa.me/541126511587" target="_blank">
+          <a
+            href="https://wa.me/541126511587"
+            target="_blank"
+            className="intro-icon"
+          >
             <FaWhatsapp className="icon" />
           </a>
-          <a href="/cv-frontend.docx" download="cv-frontend.docx">
+          <a
+            href="/cv-frontend.docx"
+            download="cv-frontend.docx"
+            className="intro-icon"
+          >
             <TbFileCv className="icon" />
           </a>
         </article>

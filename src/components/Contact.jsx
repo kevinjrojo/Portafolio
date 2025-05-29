@@ -2,6 +2,7 @@ import { useState } from "react";
 import "../styles/contact.css";
 import { FaUser } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { IoIosText } from "react-icons/io";
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -70,16 +71,18 @@ export const Contact = () => {
               placeholder="Email"
             />
           </label>
-          <label htmlFor="message-input">Mensaje</label>
-          <textarea
-            id="message-input"
-            name="message"
-            className="inputs"
-            required
-            value={formData.message}
-            onChange={handleChange}
-          />
-
+          <label htmlFor="menssage">
+            <IoIosText className="contact-icon" />
+            <input
+              placeholder="message"
+              id="message-input"
+              name="message"
+              className="inputs"
+              required
+              value={formData.message}
+              onChange={handleChange}
+            />
+          </label>
           <button type="submit" className="button">
             Enviar
           </button>
