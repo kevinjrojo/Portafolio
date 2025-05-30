@@ -1,9 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Limelight&family=Sora:wght@100..800&display=swap");
 
 :root {
-  --background-color: #dcdbdb;
+  --background-target: linear-gradient(
+    145deg,
+    rgba(110, 110, 110, 0.75),
+    rgba(128, 128, 128, 0.75)
+  );
   --color-primary: #3877ff;
   --color-text: #e4e1e1;
+  --shadow: 0 4px 8px rgba(184, 184, 184, 0.2),
+    0 6px 20px rgba(189, 189, 189, 0.15);
 }
 * {
   font-family: "Poppins", sans-serif;

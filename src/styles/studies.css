@@ -6,24 +6,17 @@
   animation-range: entry 50% cover 90%;
   color: var(--color-text);
 }
-
 .studies {
-  background: linear-gradient(
-    145deg,
-    rgba(110, 110, 110, 0.75),
-    rgba(128, 128, 128, 0.75)
-  );
+  background: var(--background-target);
+  box-shadow: var(--shadow);
+  color: var(--color-text);
   display: flex;
   flex-direction: column;
   text-align: center;
-  color: var(--color-text);
   padding: 3%;
   margin: 5%;
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(119, 119, 119, 0.2),
-    0 6px 20px rgba(143, 143, 143, 0.15);
 }
-
 .studies p {
   width: 60%;
   margin: auto;
@@ -60,23 +53,10 @@
 .zoomed-image {
   max-width: 90%;
   max-height: 90%;
-  border: 2px solid white;
   border-radius: 8px;
   cursor: pointer;
 }
-.close-certificate {
-  color: white;
-  position: relative;
-  left: 90%;
-  width: 4em;
-  height: 4em;
-  border: none;
-  background: rgba(180, 83, 107, 0.11);
-  border-radius: 5px;
-}
-.close-certificate:hover {
-  background-color: rgb(211, 21, 21);
-}
+
 @media only screen and (max-width: 600px) {
   .certificates {
     grid-template-columns: 1fr 1fr;

@@ -16,13 +16,8 @@
 .project-content {
   border-radius: 15px;
   padding: 3vh;
-  background: linear-gradient(
-    145deg,
-    rgba(110, 110, 110, 0.75),
-    rgba(128, 128, 128, 0.75)
-  );
-  box-shadow: 0 4px 8px rgba(184, 184, 184, 0.2),
-    0 6px 20px rgba(189, 189, 189, 0.15);
+  background: var(--background-target);
+  box-shadow: var(--shadow);
   animation: reveal linear both;
   animation-timeline: view();
   animation-range: entry 50% cover 90%;
@@ -34,7 +29,6 @@
   color: var(--color-text);
   margin: 10px;
 }
-
 .project-card {
   position: relative;
   width: 100%;
@@ -42,7 +36,6 @@
   margin: auto;
   z-index: 3;
 }
-
 .project-card h3 {
   position: absolute;
   z-index: 3;

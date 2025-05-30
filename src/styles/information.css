@@ -12,14 +12,9 @@
   padding: 1%;
   width: 80%;
   margin: auto;
-  background: linear-gradient(
-    145deg,
-    rgba(110, 110, 110, 0.75),
-    rgba(128, 128, 128, 0.75)
-  );
+  background: var(--background-target);
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(184, 184, 184, 0.2),
-    0 6px 20px rgba(189, 189, 189, 0.15);
+  box-shadow: var(--shadow);
   z-index: 3;
 }
 .author-image {

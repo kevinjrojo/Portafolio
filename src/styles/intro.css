@@ -120,11 +120,6 @@ hr {
     -webkit-box-reflect: below 10px linear-gradient(transparent, transparent);
   }
 }
-@keyframes icon-contact {
-  to {
-    color: var(--color-primary);
-  }
-}
 @keyframes text-intro {
   to {
     left: 0;
@@ -148,11 +143,6 @@ hr {
   to {
     width: 0;
     display: none;
-  }
-}
-@keyframes hide-contact {
-  to {
-    width: 100%;
   }
 }
 
