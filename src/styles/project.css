@@ -12,6 +12,7 @@
   height: 90%;
   width: 100%;
   place-content: center;
+  z-index: 0;
 }
 .project-content {
   border-radius: 15px;

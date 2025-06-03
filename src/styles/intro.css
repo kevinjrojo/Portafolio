@@ -28,10 +28,10 @@
   top: 0;
   height: 100dvh;
   width: 100%;
-  z-index: 3;
-  animation: enhance-intro linear both;
+  z-index: 1;
+  animation: enhance-intro linear both, resize-icon linear both;
   animation-timeline: scroll(root block);
-  animation-range: 0 90vh;
+  animation-range: 0 90vh, 330vh 400vh;
 }
 .text-presentation {
   display: grid;
@@ -86,10 +86,11 @@ hr {
   width: 4vh;
   height: 4vh;
   transition: 0.2s;
+
   -webkit-box-reflect: below 10px linear-gradient(transparent, #c2c2c271);
-  animation: icon-reflect linear both;
+  animation: icon-reflect linear both, iconos linear both;
   animation-timeline: scroll(root block);
-  animation-range: 0vh 35vh;
+  animation-range: 0vh 35vh, 330vh 400vh;
 }
 .icon:hover {
   color: var(--color-primary);
@@ -99,9 +100,6 @@ hr {
   color: black;
   padding: 0;
   margin: 0;
-  animation: icon-contact linear both;
-  animation-timeline: view();
-  animation-range: cover 430%;
 }
 @keyframes icon-reflect {
   0% {
@@ -120,6 +118,12 @@ hr {
     -webkit-box-reflect: below 10px linear-gradient(transparent, transparent);
   }
 }
+@keyframes resize-icon {
+  to {
+    height: 100vh;
+    z-index: 2;
+  }
+}
 @keyframes text-intro {
   to {
     left: 0;
@@ -133,6 +137,9 @@ hr {
   }
 }
 @keyframes enhance-intro {
+  from {
+    height: 100vh;
+  }
   to {
     background-color: rgba(37, 37, 37, 0.648);
     backdrop-filter: blur(1px);
@@ -145,10 +152,33 @@ hr {
     display: none;
   }
 }
-
+@keyframes iconos {
+  to {
+    color: var(--color-primary);
+    height: 6vh;
+    width: 6vh;
+    position: relative;
+    top: 43vh;
+    z-index: 3;
+  }
+}
 @media only screen and (max-width: 600px) {
   .text-intro {
     gap: 15px;
+    animation: enhance-intro linear both, resize-icon linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 90vh, 280vh 370vh;
+  }
+  @keyframes iconos {
+    to {
+      color: var(--color-primary);
+      height: 5vh;
+      width: 5vh;
+
+      position: relative;
+      top: 43vh;
+      z-index: 3;
+    }
   }
   .photo {
     display: none;
