@@ -29,9 +29,9 @@
   height: 100dvh;
   width: 100%;
   z-index: 1;
-  animation: enhance-intro linear both, resize-icon linear both;
+  animation: enhance-intro linear both, section-contact linear both;
   animation-timeline: scroll(root block);
-  animation-range: 0 90vh, 330vh 400vh;
+  animation-range: 0 90vh, 330vh 395vh;
 }
 .text-presentation {
   display: grid;
@@ -86,11 +86,10 @@ hr {
   width: 4vh;
   height: 4vh;
   transition: 0.2s;
-
   -webkit-box-reflect: below 10px linear-gradient(transparent, #c2c2c271);
-  animation: icon-reflect linear both, iconos linear both;
+  animation: icon-reflect linear both, change-icons linear both;
   animation-timeline: scroll(root block);
-  animation-range: 0vh 35vh, 330vh 400vh;
+  animation-range: 0vh 35vh, 350vh 400vh;
 }
 .icon:hover {
   color: var(--color-primary);
@@ -118,12 +117,6 @@ hr {
     -webkit-box-reflect: below 10px linear-gradient(transparent, transparent);
   }
 }
-@keyframes resize-icon {
-  to {
-    height: 100vh;
-    z-index: 2;
-  }
-}
 @keyframes text-intro {
   to {
     left: 0;
@@ -136,10 +129,12 @@ hr {
     opacity: 0;
   }
 }
-@keyframes enhance-intro {
-  from {
+@keyframes section-contact {
+  to {
     height: 100vh;
   }
+}
+@keyframes enhance-intro {
   to {
     background-color: rgba(37, 37, 37, 0.648);
     backdrop-filter: blur(1px);
@@ -152,34 +147,20 @@ hr {
     display: none;
   }
 }
-@keyframes iconos {
+@keyframes change-icons {
   to {
-    color: var(--color-primary);
-    height: 6vh;
-    width: 6vh;
-    position: relative;
-    top: 43vh;
-    z-index: 3;
+    width: 0vh;
+    opacity: 0;
+    height: 0vh;
+    display: none;
   }
 }
 @media only screen and (max-width: 600px) {
   .text-intro {
     gap: 15px;
-    animation: enhance-intro linear both, resize-icon linear both;
-    animation-timeline: scroll(root block);
-    animation-range: 0 90vh, 280vh 370vh;
+    animation-range: 0 90vh, 340vh 370vh;
   }
-  @keyframes iconos {
-    to {
-      color: var(--color-primary);
-      height: 5vh;
-      width: 5vh;
 
-      position: relative;
-      top: 43vh;
-      z-index: 3;
-    }
-  }
   .photo {
     display: none;
   }
@@ -219,7 +200,9 @@ hr {
     font-size: 24px;
     margin: 0;
   }
-
+  .icon {
+    animation-range: 0vh 35vh, 340vh 370vh;
+  }
   .text-intro p {
     display: none;
   }

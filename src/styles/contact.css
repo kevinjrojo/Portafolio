@@ -58,16 +58,44 @@
   color: white;
   border-radius: 5px;
 }
+.icon-container {
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+  margin: 1%;
+}
+.icon-contact {
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  animation: icon-contact linear both;
+  animation-timeline: scroll(root block);
+  animation-range: 350vh 400vh;
+  -webkit-box-reflect: below 10px linear-gradient(transparent, #c2c2c271);
+}
 @keyframes icon-contact {
-  400% {
-    color: var(--color-primary);
+  to {
+    width: 6vh;
+    height: 6vh;
   }
 }
-
 @media only screen and (max-width: 600px) {
+  @keyframes icon-contact {
+    to {
+      width: 5vh;
+      height: 5vh;
+    }
+  }
   .contact-form {
     place-content: center;
     width: 80%;
     height: 60%;
+  }
+  .icon-contact {
+    animation-range: 340vh 370vh;
+  }
+  .icon-container {
+    margin: 4%;
+    gap: 7%;
   }
 }
