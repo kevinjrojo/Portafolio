@@ -38,7 +38,7 @@ export const Contact = () => {
         setFormData({ name: "", email: "", message: "" });
       }
       if (!formData.name || !formData.message || !formData.email) {
-        setError("completa los campos marcados");
+        setError("completa todos campos marcados");
       }
     } catch (error) {
       console.error("Error de red:", error);
@@ -49,10 +49,11 @@ export const Contact = () => {
     <article className="contact" id="contact-me">
       <section className="contact-form">
         <h2>Contáctame</h2>
-        <form onSubmit={handleSubmit} className="form">
+        <form onSubmit={handleSubmit}>
           <label htmlFor="Name">
-            <FaUser className="contact-icon" />
-
+            <label className="input-contact">
+              <FaUser />*
+            </label>
             <input
               type="text"
               name="name"
@@ -64,7 +65,10 @@ export const Contact = () => {
             />
           </label>
           <label htmlFor="Email">
-            <MdEmail className="contact-icon" />
+            <label className="input-contact">
+              <MdEmail />*
+            </label>
+
             <input
               type="email"
               name="email"
@@ -75,8 +79,11 @@ export const Contact = () => {
               placeholder="Email"
             />
           </label>
+
           <label htmlFor="menssage">
-            <IoIosText className="contact-icon" />
+            <label className="input-contact">
+              <IoIosText />*
+            </label>
             <input
               placeholder="message"
               id="message-input"
@@ -86,6 +93,7 @@ export const Contact = () => {
               onChange={handleChange}
             />
           </label>
+
           <button type="submit" className="button">
             Enviar
           </button>
