@@ -8,6 +8,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { TbFileCv } from "react-icons/tb";
+import { Success } from "./Success";
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -20,10 +21,12 @@ export const Contact = () => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
+  const [success, setSuccess] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    if (!formData.name || !formData.message || !formData.email)
+      return setError("completa todos campos marcados");
     try {
       const res = await fetch("https://formspree.io/f/xgvkgoze", {
         method: "POST",
@@ -33,73 +36,73 @@ export const Contact = () => {
         },
         body: JSON.stringify(formData),
       });
-
       if (res.ok) {
         setFormData({ name: "", email: "", message: "" });
-      }
-      if (!formData.name || !formData.message || !formData.email) {
-        setError("completa todos campos marcados");
+        setSuccess(true);
       }
     } catch (error) {
       console.error("Error de red:", error);
     }
   };
-
+  const handleReset = () => {
+    setSuccess(false);
+    setError("");
+  };
   return (
     <article className="contact" id="contact-me">
-      <section className="contact-form">
-        <h2>Contáctame</h2>
-        <form onSubmit={handleSubmit}>
-          <label htmlFor="Name">
-            <label className="input-contact">
-              <FaUser />*
+      {success ? (
+        <Success onReset={handleReset} />
+      ) : (
+        <section className="contact-form">
+          <h2>Contáctame</h2>
+          <form onSubmit={handleSubmit}>
+            <label htmlFor="Name">
+              <label className="input-contact">
+                <FaUser />*
+              </label>
+              <input
+                type="text"
+                name="name"
+                className="inputs"
+                value={formData.name}
+                onChange={handleChange}
+                placeholder="Kevin Rojo"
+              />
             </label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              className="inputs"
-              value={formData.name}
-              onChange={handleChange}
-              placeholder="Name"
-            />
-          </label>
-          <label htmlFor="Email">
-            <label className="input-contact">
-              <MdEmail />*
+            <label>
+              <label className="input-contact">
+                <MdEmail />*
+              </label>
+              <input
+                type="email"
+                name="email"
+                className="inputs"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder="Example@gmail.com"
+              />
             </label>
 
-            <input
-              type="email"
-              name="email"
-              id="email"
-              className="inputs"
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="Email"
-            />
-          </label>
-
-          <label htmlFor="menssage">
-            <label className="input-contact">
-              <IoIosText />*
+            <label htmlFor="menssage">
+              <label className="input-contact">
+                <IoIosText />*
+              </label>
+              <input
+                placeholder="Escribí tu mensaje..."
+                name="message"
+                className="inputs"
+                value={formData.message}
+                onChange={handleChange}
+              />
             </label>
-            <input
-              placeholder="message"
-              id="message-input"
-              name="message"
-              className="inputs"
-              value={formData.message}
-              onChange={handleChange}
-            />
-          </label>
 
-          <button type="submit" className="button">
-            Enviar
-          </button>
-          {error && <p style={{ color: "red" }}>{error}</p>}
-        </form>
-      </section>
+            <button type="submit" className="button">
+              Enviar
+            </button>
+            {error && <p style={{ color: "var(--color-text)" }}>{error}</p>}
+          </form>
+        </section>
+      )}
       <section className="icon-container">
         <FaInstagram className="icon-contact" />
         <FaGithub className="icon-contact" />
