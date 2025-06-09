@@ -14,26 +14,28 @@ export const Information = () => {
         <article className="information-container">
           <h2>Sobre mi</h2>
           <p className="description">
-            ¡Hola! Soy Kevin, un apasionado desarrollador front-end con
-            experiencia en la creación de páginas web excepcionales. Con más de
-            2 años de experiencia en el campo, me especializo en convertir
-            diseños creativos en interfaces interactivas y funcionales. <br />
-            <br /> He trabajado en proyectos emocionantes que van desde
-            aplicaciones web responsivas hasta plataformas de comercio
-            electrónico de alto rendimiento. Estoy familiarizado con una
-            variedad de tecnologías front-end, incluyendo HTML5, CSS3,
-            JavaScript y frameworks modernos como React.js. También tengo una
-            básica experiencia en desarrolo Back-end con Node js y base de datos
-            no relacional con Mongo db. <br /> <br />
-            Soy un solucionador de problemas creativo, siempre buscando nuevas
-            formas de mejorar la experiencia del usuario y la eficiencia del
-            código. Me enorgullece escribir código limpio, semántico y modular
-            que cumpla con los estándares de la industria y sea fácil de
-            mantener y escalar. Estoy emocionado por explorar nuevas
-            oportunidades en el campo del desarrollo front-end y colaborar con
-            equipos dinámicos en proyectos emocionantes. Si estás buscando un
-            desarrollador comprometido con la excelencia y la innovación, ¡me
-            encantaría conectar contigo!
+            Hola, soy Kevin, un desarrollador front-end apasionado por crear
+            experiencias digitales modernas y accesibles. Tengo más de 3 años de
+            experiencia construyendo interfaces limpias, responsivas y
+            funcionales, con un enfoque en rendimiento, escalabilidad y buenas
+            prácticas.
+            <br />
+            <br />
+            Me especializo en HTML5, CSS3, JavaScript y en el desarrollo con
+            React.js. En el último tiempo he incorporado Tailwind CSS a mi
+            stack, lo que me permite diseñar componentes con mayor rapidez y
+            coherencia visual.
+            <br /> <br />
+            También tengo conocimientos básicos en tecnologías del lado del
+            servidor,soy capaz de levantar un servidor usando Node.js y
+            Express.js, lo cual me permite comprender mejor cómo interactúan los
+            datos entre el front y el back. Tuve la oportunidad de utilizar base
+            de datos como Mongo db.
+            <br /> <br /> Disfruto escribir código limpio y modular, priorizando
+            la experiencia del usuario y la mantenibilidad del proyecto. Siempre
+            estoy buscando nuevos retos y oportunidades para crecer como
+            desarrollador, colaborar en equipo y aportar soluciones sólidas
+            desde el lado del cliente.
           </p>
         </article>
       </div>

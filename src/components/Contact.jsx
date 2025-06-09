@@ -104,11 +104,25 @@ export const Contact = () => {
         </section>
       )}
       <section className="icon-container">
-        <FaInstagram className="icon-contact" />
-        <FaGithub className="icon-contact" />
-        <FaLinkedin className="icon-contact" />
-        <FaWhatsapp className="icon-contact" />
-        <TbFileCv className="icon-contact" />
+        <a href="https://www.instagram.com/programacion_kr/" target="_blank">
+          <FaInstagram className="icon-contact" />
+        </a>
+        <a href="https://github.com/kevinjrojo" target="_blank">
+          <FaGithub className="icon-contact" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/kevin-javier-rojo-a24492222/"
+          target="_blank"
+        >
+          <FaLinkedin className="icon-contact" />
+        </a>
+        <a href="https://wa.me/541126511587" target="_blank">
+          {" "}
+          <FaWhatsapp className="icon-contact" />
+        </a>
+        <a href="./Portafolio/cv_frontend.pdf" target="_blank">
+          <TbFileCv className="icon-contact" />
+        </a>
       </section>
     </article>
   );

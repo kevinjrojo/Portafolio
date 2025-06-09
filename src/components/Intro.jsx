@@ -56,7 +56,7 @@ export const Intro = () => {
           </a>
           <a
             href="./Portafolio/cv_frontend.pdf"
-            download="cv_frontend.pdf"
+            target="_blank"
             className="intro-icon"
           >
             <TbFileCv className="icon" />

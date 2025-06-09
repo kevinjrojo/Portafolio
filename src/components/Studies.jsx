@@ -28,10 +28,10 @@ export const Studies = () => {
     <main className="main-skills">
       <div className="studies">
         <article className="text-studies">
-          <h2>Skills</h2>
+          <h2>Certificados</h2>
           <p>
-            Front-end developer con experiencia en React, SPA y consumo de APIs.
-            Uso HTML, CSS, JavaScript y librerías como Bootstrap y Chakra.
+            Cursos completados en tecnologías como React, SPA, APIs, HTML, CSS,
+            JavaScript, Bootstrap y Chakra UI.
           </p>
         </article>
         <div className="certificates">

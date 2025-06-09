@@ -70,6 +70,9 @@
   justify-content: center;
   margin: 1%;
 }
+.icon-container a {
+  color: var(--color-text);
+}
 .icon-contact {
   cursor: pointer;
   width: 0;
@@ -78,6 +81,11 @@
   animation-timeline: scroll(root block);
   animation-range: 350vh 400vh;
   -webkit-box-reflect: below 10px linear-gradient(transparent, #c2c2c271);
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+.icon-contact:hover {
+  transform: scale(1.2);
 }
 .success {
   display: flex;
@@ -129,14 +137,20 @@
   .icon-contact {
     animation-range: 340vh 370vh;
   }
+  .icon-contact:hover {
+    transform: none;
+  }
   .icon-container {
     margin: 4%;
     gap: 7%;
   }
   .success {
     width: 80%;
-    padding: 0;
-    gap: 0px;
+    padding-top: 30%;
+    padding-bottom: 30%;
+    gap: 35px;
+    align-content: end;
+    place-content: end;
   }
   .icon-success {
     height: 120px;

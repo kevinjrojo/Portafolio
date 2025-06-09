@@ -19,8 +19,8 @@
 }
 .author-image {
   margin: auto;
-  width: 40vh;
-  height: 60vh;
+  max-width: 60%;
+  max-height: 95%;
   object-fit: cover;
   border-radius: 15px;
   z-index: 3;
@@ -29,6 +29,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  place-content: center;
   color: var(--color-text);
   font-size: 0.84em;
 }
@@ -51,23 +52,27 @@
 @media only screen and (max-width: 600px) {
   .main-information div {
     grid-template-columns: 1fr;
-    padding: 4%;
+    padding: 3%;
+    width: 75%;
   }
   .author-image {
     z-index: 1;
   }
   .information-card {
     position: relative;
+    text-align: center;
   }
   .information-card img {
     display: flex;
+
     position: absolute;
     filter: brightness(0.3);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     justify-content: center;
-    height: 95%;
+    max-width: 100%;
+    max-height: 95%;
   }
   .information-container {
     z-index: 2;
