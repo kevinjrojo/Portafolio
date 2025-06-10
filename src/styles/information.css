@@ -19,8 +19,8 @@
 }
 .author-image {
   margin: auto;
-  max-width: 60%;
-  max-height: 95%;
+  width: 70%;
+  height: 75%;
   object-fit: cover;
   border-radius: 15px;
   z-index: 3;
