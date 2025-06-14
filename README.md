@@ -19,7 +19,7 @@ Este portafolio es una recopilación de mis proyectos y habilidades como desarro
 
 ## Cómo acceder  
 ### En vivo  
-Puedes explorar mi portafolio en el siguiente enlace: [https://kevinjrojo.github.io/Portafolio/](https://www.krdev.online)  
+Puedes explorar mi portafolio en el siguiente enlace: [krdev](https://www.krdev.online)  
 
 ### Localmente  
 1. Clona este repositorio:  
