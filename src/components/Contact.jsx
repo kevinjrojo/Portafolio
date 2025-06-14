@@ -120,7 +120,10 @@ export const Contact = () => {
           {" "}
           <FaWhatsapp className="icon-contact" />
         </a>
-        <a href="./Portafolio/cv_frontend.pdf" target="_blank">
+        <a
+          href="https://drive.google.com/file/d/1E3A3JhVESXbrypKhIAZY713D3khDsnp1/view?usp=sharing"
+          target="_blank"
+        >
           <TbFileCv className="icon-contact" />
         </a>
       </section>

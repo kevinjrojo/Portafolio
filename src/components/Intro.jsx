@@ -55,7 +55,7 @@ export const Intro = () => {
             <FaWhatsapp className="icon" />
           </a>
           <a
-            href="./Portafolio/cv_frontend.pdf"
+            href="https://drive.google.com/file/d/1E3A3JhVESXbrypKhIAZY713D3khDsnp1/view?usp=sharing"
             target="_blank"
             className="intro-icon"
           >
