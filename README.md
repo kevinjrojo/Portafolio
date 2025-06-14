@@ -7,7 +7,7 @@ Este portafolio es una recopilación de mis proyectos y habilidades como desarro
 - **HTML**  
 - **CSS** (Flexbox,Grid,Animation)  
 - **JavaScript**  
-- **React.js**  
+- **React.js**  (useState, react-icon,fech,)
 - **Vite**  
 - **Git y GitHub**
 
