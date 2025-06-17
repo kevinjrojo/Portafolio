@@ -8,7 +8,7 @@ import { Contact } from "./components/Contact";
 function App() {
   return (
     <>
-      <section className="secction">
+      <section>
         <Intro />
         <Information />
         <Project />

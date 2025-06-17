@@ -1,9 +1,8 @@
 .main-skills {
+  height: 100vh;
   height: 100dvh;
   place-content: center;
-  animation: reveal linear both;
-  animation-timeline: view();
-  animation-range: entry 50% cover 90%;
+  display: grid;
   color: var(--color-text);
 }
 .studies {
@@ -15,6 +14,8 @@
   text-align: center;
   padding: 3%;
   margin: 5%;
+  position: relative;
+  z-index: 3;
   border-radius: 15px;
 }
 .studies p {
@@ -29,6 +30,7 @@
   place-items: center;
   margin-bottom: 50px;
   gap: 15px;
+  z-index: 3;
 }
 .certificates-studies {
   cursor: pointer;
@@ -48,13 +50,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1000;
+  z-index: 5;
 }
 .zoomed-image {
   max-width: 90%;
   max-height: 90%;
   border-radius: 8px;
   cursor: pointer;
+}
+
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .main-skills {
+      animation: reveal linear both;
+      animation-timeline: view();
+      animation-range: entry 50% cover 90%;
+    }
+  }
 }
 
 @media only screen and (max-width: 600px) {

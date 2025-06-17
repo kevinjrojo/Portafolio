@@ -1,10 +1,8 @@
 .main-information {
   height: 100vh;
   place-content: center;
-  animation: reveal linear both;
-  animation-timeline: view();
-  animation-range: entry 50% cover 90%;
   z-index: 3;
+  display: grid;
 }
 .main-information div {
   display: grid;
@@ -33,7 +31,15 @@
   color: var(--color-text);
   font-size: 0.84em;
 }
-
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .main-information {
+      animation: reveal linear both;
+      animation-timeline: view();
+      animation-range: entry 50% cover 90%;
+    }
+  }
+}
 @keyframes reveal {
   0% {
     opacity: 0;
@@ -48,25 +54,21 @@
     opacity: 0;
   }
 }
-
 @media only screen and (max-width: 600px) {
   .main-information div {
     grid-template-columns: 1fr;
     padding: 3%;
     width: 75%;
+    position: relative;
+    text-align: center;
   }
   .author-image {
     z-index: 1;
     width: 95%;
     height: 100%;
   }
-  .information-card {
-    position: relative;
-    text-align: center;
-  }
   .information-card img {
     display: flex;
-
     position: absolute;
     filter: brightness(0.3);
     top: 50%;

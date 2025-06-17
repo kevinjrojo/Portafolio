@@ -3,11 +3,8 @@
   position: relative;
   overflow-y: auto;
   color: var(--color-text);
-  place-content: center;
-  animation: reveal linear both;
-  animation-timeline: view();
-  animation-range: entry 50% cover 90%;
-  z-index: 2;
+  display: grid;
+  z-index: 3;
 }
 .contact-form {
   text-align: center;
@@ -116,6 +113,15 @@
   color: white;
   border-radius: 5px;
 }
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .contact {
+      animation: reveal linear both;
+      animation-timeline: view();
+      animation-range: entry 50% cover 90%;
+    }
+  }
+}
 @keyframes icon-contact {
   to {
     width: 6vh;
@@ -130,9 +136,8 @@
     }
   }
   .contact-form {
-    place-content: center;
     width: 80%;
-    height: 60%;
+    height: 70%;
   }
   .icon-contact {
     animation-range: 340vh 370vh;

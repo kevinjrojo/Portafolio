@@ -19,9 +19,6 @@
   padding: 3vh;
   background: var(--background-target);
   box-shadow: var(--shadow);
-  animation: reveal linear both;
-  animation-timeline: view();
-  animation-range: entry 50% cover 90%;
   width: 80%;
   margin: auto;
 }
@@ -57,9 +54,6 @@
   z-index: 3;
   text-align: center;
   width: 100%;
-  animation: reveal linear both;
-  animation-timeline: view();
-  animation-range: entry -300% cover 80%;
 }
 .project-link a {
   margin: 25px;
@@ -71,13 +65,13 @@
 }
 .right,
 .left {
-  place-content: center;
+  display: flex;
+  align-items: center;
   cursor: pointer;
   position: relative;
   z-index: 3;
   font-size: 60px;
   height: 65%;
-  place-content: center;
   color: var(--color-text);
 }
 .project-image-movil {
@@ -86,6 +80,21 @@
 .project-content strong {
   text-align: center;
 }
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .project-content {
+      animation: reveal linear both;
+      animation-timeline: view();
+      animation-range: entry 50% cover 90%;
+    }
+    .project-link {
+      animation: reveal linear both;
+      animation-timeline: view();
+      animation-range: entry -300% cover 80%;
+    }
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .main-projects {
     height: auto;
@@ -121,10 +130,9 @@
     place-content: center;
     cursor: pointer;
     position: relative;
-    z-index: 1000;
+    z-index: 3;
     font-size: 30px;
   }
-
   .project-link {
     width: 100%;
     border: none;
