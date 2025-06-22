@@ -25,7 +25,7 @@ export const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!formData.name || !formData.message || !formData.email)
+    if (!formData.name || !formData.message)
       return setError("completa todos campos marcados");
     try {
       const res = await fetch("https://formspree.io/f/xgvkgoze", {
@@ -71,7 +71,8 @@ export const Contact = () => {
             </label>
             <label>
               <label className="input-contact">
-                <MdEmail />*
+                <MdEmail />
+                <br />
               </label>
               <input
                 type="email"
