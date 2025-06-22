@@ -115,7 +115,6 @@ hr {
     }
   }
 }
-
 @keyframes icon-reflect {
   0% {
     -webkit-box-reflect: below 10px linear-gradient(transparent, #c2c2c24d);
@@ -208,8 +207,7 @@ hr {
     font-size: 24px;
     margin: 0;
   }
-  .icon {
-  }
+
   .text-intro p {
     display: none;
   }

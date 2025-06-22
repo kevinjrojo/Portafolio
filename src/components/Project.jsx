@@ -1,7 +1,6 @@
 import "../styles/project.css";
 import { useState } from "react";
 import { projects } from "../service/data.js";
-
 import { TiChevronRight } from "react-icons/ti";
 import { TiChevronLeft } from "react-icons/ti";
 import { useSwipeable } from "react-swipeable";
