@@ -71,8 +71,7 @@ export const Contact = () => {
             </label>
             <label>
               <label className="input-contact">
-                <MdEmail />
-                <br />
+                <MdEmail />*
               </label>
               <input
                 type="email"
